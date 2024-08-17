@@ -1,0 +1,234 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>MeasurementRange | matter.js-monorepo</title><meta name="description" content="Documentation for matter.js-monorepo"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #f6be46;
+    --md-sys-color-on-primary: #412d00;
+    --md-sys-color-primary-container: #5d4200;
+    --md-sys-color-on-primary-container: #ffdea3;
+    --md-sys-color-secondary: #d9c4a0;
+    --md-sys-color-on-secondary: #3b2f15;
+    --md-sys-color-secondary-container: #53452a;
+    --md-sys-color-on-secondary-container: #f6e0bb;
+    --md-sys-color-tertiary: #b2cfa8;
+    --md-sys-color-on-tertiary: #1e361a;
+    --md-sys-color-tertiary-container: #344d2f;
+    --md-sys-color-on-tertiary-container: #cdebc2;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #1e1b16;
+    --md-sys-color-on-background: #e9e1d9;
+    --md-sys-color-surface: #1e1b16;
+    --md-sys-color-on-surface: #e9e1d9;
+    --md-sys-color-surface-variant: #4e4639;
+    --md-sys-color-on-surface-variant: #d1c5b4;
+    --md-sys-color-outline: #9a8f80;
+    --md-sys-color-outline-variant: #4e4639;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e9e1d9;
+    --md-sys-color-inverse-on-surface: #34302a;
+    --md-sys-color-inverse-primary: #7a5900;
+    --md-sys-color-surface-dim: #16130e;
+    --md-sys-color-surface-bright: #3d3933;
+    --md-sys-color-surface-container-lowest: #110e09;
+    --md-sys-color-surface-container-low: #1e1b16;
+    --md-sys-color-surface-container: #221f1a;
+    --md-sys-color-surface-container-high: #2d2924;
+    --md-sys-color-surface-container-highest: #38342e
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #f6be46;
+  --md-sys-color-on-primary: #412d00;
+  --md-sys-color-primary-container: #5d4200;
+  --md-sys-color-on-primary-container: #ffdea3;
+  --md-sys-color-secondary: #d9c4a0;
+  --md-sys-color-on-secondary: #3b2f15;
+  --md-sys-color-secondary-container: #53452a;
+  --md-sys-color-on-secondary-container: #f6e0bb;
+  --md-sys-color-tertiary: #b2cfa8;
+  --md-sys-color-on-tertiary: #1e361a;
+  --md-sys-color-tertiary-container: #344d2f;
+  --md-sys-color-on-tertiary-container: #cdebc2;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #1e1b16;
+  --md-sys-color-on-background: #e9e1d9;
+  --md-sys-color-surface: #1e1b16;
+  --md-sys-color-on-surface: #e9e1d9;
+  --md-sys-color-surface-variant: #4e4639;
+  --md-sys-color-on-surface-variant: #d1c5b4;
+  --md-sys-color-outline: #9a8f80;
+  --md-sys-color-outline-variant: #4e4639;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e9e1d9;
+  --md-sys-color-inverse-on-surface: #34302a;
+  --md-sys-color-inverse-primary: #7a5900;
+  --md-sys-color-surface-dim: #16130e;
+  --md-sys-color-surface-bright: #3d3933;
+  --md-sys-color-surface-container-lowest: #110e09;
+  --md-sys-color-surface-container-low: #1e1b16;
+  --md-sys-color-surface-container: #221f1a;
+  --md-sys-color-surface-container-high: #2d2924;
+  --md-sys-color-surface-container-highest: #38342e
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #7a5900;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #ffdea3;
+    --md-sys-color-on-primary-container: #261900;
+    --md-sys-color-secondary: #6c5c3f;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #f6e0bb;
+    --md-sys-color-on-secondary-container: #251a04;
+    --md-sys-color-tertiary: #4b6545;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #cdebc2;
+    --md-sys-color-on-tertiary-container: #092007;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fffbff;
+    --md-sys-color-on-background: #1e1b16;
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #1e1b16;
+    --md-sys-color-surface-variant: #ede1cf;
+    --md-sys-color-on-surface-variant: #4e4639;
+    --md-sys-color-outline: #7f7667;
+    --md-sys-color-outline-variant: #d1c5b4;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #34302a;
+    --md-sys-color-inverse-on-surface: #f8efe7;
+    --md-sys-color-inverse-primary: #f6be46;
+    --md-sys-color-surface-dim: #e1d9d0;
+    --md-sys-color-surface-bright: #fff8f2;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fbf2e9;
+    --md-sys-color-surface-container: #f5ede4;
+    --md-sys-color-surface-container-high: #efe7de;
+    --md-sys-color-surface-container-highest: #e9e1d9
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #7a5900;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #ffdea3;
+  --md-sys-color-on-primary-container: #261900;
+  --md-sys-color-secondary: #6c5c3f;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f6e0bb;
+  --md-sys-color-on-secondary-container: #251a04;
+  --md-sys-color-tertiary: #4b6545;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #cdebc2;
+  --md-sys-color-on-tertiary-container: #092007;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fffbff;
+  --md-sys-color-on-background: #1e1b16;
+  --md-sys-color-surface: #fffbff;
+  --md-sys-color-on-surface: #1e1b16;
+  --md-sys-color-surface-variant: #ede1cf;
+  --md-sys-color-on-surface-variant: #4e4639;
+  --md-sys-color-outline: #7f7667;
+  --md-sys-color-outline-variant: #d1c5b4;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #34302a;
+  --md-sys-color-inverse-on-surface: #f8efe7;
+  --md-sys-color-inverse-primary: #f6be46;
+  --md-sys-color-surface-dim: #e1d9d0;
+  --md-sys-color-surface-bright: #fff8f2;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #fbf2e9;
+  --md-sys-color-surface-container: #f5ede4;
+  --md-sys-color-surface-container-high: #efe7de;
+  --md-sys-color-surface-container-highest: #e9e1d9
+}
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base=".."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">matter.js-monorepo</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb"><li><a href="../index.html">matter.js-monorepo</a></li><li><a href="../modules/_project_chip_matter_node_js.html">@project-chip/matter-node.js</a></li><li><a href="../modules/_project_chip_matter_node_js.cluster.html">cluster</a></li><li><a href="../modules/_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.html">ElectricalPowerMeasurement</a></li><li><a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html">MeasurementRange</a></li></ul><h1>Interface MeasurementRange</h1></div><section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography"><p>This struct shall indicate the maximum and minimum values of a given measurement type during a measurement
+period, along with the observation times of these values.</p>
+<p>A server which does not have the ability to determine the time in UTC, or has not yet done so, shall use the
+system time fields to specify the measurement period and observation times.</p>
+<p>A server which has determined the time in UTC shall use the timestamp fields to specify the measurement period
+and observation times. Such a server may also include the systime fields to indicate how many seconds had passed
+since boot for a given timestamp; this allows for client-side resolution of UTC time for previous reports that
+only included systime.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See" class="tsd-anchor"></a>See<a href="#See" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2</p>
+</div></section><div class="tsd-signature"><span class="tsd-signature-keyword">interface </span><span class="tsd-kind-interface">MeasurementRange</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#endSystime">endSystime</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#endTimestamp">endTimestamp</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#max">max</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#maxSystime">maxSystime</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#maxTimestamp">maxTimestamp</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#measurementType">measurementType</a><span class="tsd-signature-symbol">: </span><a href="../enums/_project_chip_matter_node_js.cluster.MeasurementType.html" class="tsd-signature-type tsd-kind-enum">MeasurementType</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#min">min</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#minSystime">minSystime</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#minTimestamp">minTimestamp</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#startSystime">startSystime</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#startTimestamp">startTimestamp</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div><section class="tsd-panel tsd-hierarchy"><h4>Hierarchy (<a href="../hierarchy.html#@project-chip/matter-node.js.cluster.ElectricalPowerMeasurement.MeasurementRange">view full</a>)</h4><ul class="tsd-hierarchy"><li><a href="../types/_project_chip_matter_node_js.tlv.TypeFromSchema.html" class="tsd-signature-type tsd-kind-type-alias">TypeFromSchema</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-keyword">typeof </span><a href="../modules/_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.html" class="tsd-signature-type tsd-kind-namespace">ElectricalPowerMeasurement</a><span class="tsd-signature-symbol">.</span><a href="../variables/_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.TlvMeasurementRange.html" class="tsd-signature-type tsd-kind-variable">TlvMeasurementRange</a><span class="tsd-signature-symbol">&gt;</span><ul class="tsd-hierarchy"><li><span class="target">MeasurementRange</span></li></ul></li></ul></section><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:230</li></ul></aside><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex="0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-chevronSmall"></use></svg> Index</h5></summary><div class="tsd-accordion-details"><section class="tsd-index-section"><h3 class="tsd-index-heading">Properties</h3><div class="tsd-index-list"><a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#endSystime" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>end<wbr/>Systime?</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#endTimestamp" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>end<wbr/>Timestamp?</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#max" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>max</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#maxSystime" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>max<wbr/>Systime?</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#maxTimestamp" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>max<wbr/>Timestamp?</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#measurementType" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>measurement<wbr/>Type</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#min" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>min</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#minSystime" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>min<wbr/>Systime?</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#minTimestamp" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>min<wbr/>Timestamp?</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#startSystime" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>start<wbr/>Systime?</span></a>
+<a href="_project_chip_matter_node_js.cluster.ElectricalPowerMeasurement.MeasurementRange.html#startTimestamp" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>start<wbr/>Timestamp?</span></a>
+</div></section></div></details></section></section><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg> Properties</h2></summary><section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="endSystime" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code><span>end<wbr/>Systime</span><a href="#endSystime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">end<wbr/>Systime</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the time since boot of the end of the measurement period.</p>
+<p>If the server had determined the time in UTC at the end of the measurement period, this field may be omitted
+along with the StartSystime field, MinSystime, and MaxSystime fields.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-1" class="tsd-anchor"></a>See<a href="#See-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.9</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.endSystime</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:196</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="endTimestamp" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code><span>end<wbr/>Timestamp</span><a href="#endTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">end<wbr/>Timestamp</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the timestamp in UTC of the end of the measurement period.</p>
+<p>If the server had not yet determined the time in UTC at or before the beginning of the measurement period,
+or does not have the capability of determining the time in UTC, this field shall be omitted.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-2" class="tsd-anchor"></a>See<a href="#See-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.5</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.endTimestamp</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:161</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="max" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>max</span><a href="#max" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">max</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the largest measured value for the associated measurement over the period between either
+StartTimestamp and EndTimestamp or the period between StartSystime and EndSystime, or both.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-3" class="tsd-anchor"></a>See<a href="#See-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.3</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.max</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:143</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="maxSystime" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code><span>max<wbr/>Systime</span><a href="#maxSystime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">max<wbr/>Systime</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the measurement time since boot of the value in the Max field. This field shall be
+greater than or equal to the value of the StartSystime field.</p>
+<p>This field shall be less than or equal to the value of the EndSystime field.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-4" class="tsd-anchor"></a>See<a href="#See-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.11</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.maxSystime</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:214</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="maxTimestamp" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code><span>max<wbr/>Timestamp</span><a href="#maxTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">max<wbr/>Timestamp</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the most recent timestamp in UTC of the value in the Max field. This field shall be
+greater than or equal to the value of the StartTimestamp field. This field shall be less than or equal to
+the value of the EndTimestamp field.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-5" class="tsd-anchor"></a>See<a href="#See-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.7</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.maxTimestamp</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:178</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="measurementType" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>measurement<wbr/>Type</span><a href="#measurementType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">measurement<wbr/>Type</span><span class="tsd-signature-symbol">:</span> <a href="../enums/_project_chip_matter_node_js.cluster.MeasurementType.html" class="tsd-signature-type tsd-kind-enum">MeasurementType</a></div><div class="tsd-comment tsd-typography"><p>This field shall be the type of measurement for the range provided.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-6" class="tsd-anchor"></a>See<a href="#See-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.1</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.measurementType</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:129</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="min" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>min</span><a href="#min" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">min</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the smallest measured value for the associated measurement over either the period
+between StartTimestamp and EndTimestamp, or the period between StartSystime and EndSystime, or both.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-7" class="tsd-anchor"></a>See<a href="#See-7" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.2</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.min</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:136</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="minSystime" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code><span>min<wbr/>Systime</span><a href="#minSystime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">min<wbr/>Systime</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the measurement time since boot of the value in the Min field was measured. This field
+shall be greater than or equal to the value of the StartSystime field.</p>
+<p>This field shall be less than or equal to the value of the EndSystime field.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-8" class="tsd-anchor"></a>See<a href="#See-8" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.10</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.minSystime</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:205</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="minTimestamp" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code><span>min<wbr/>Timestamp</span><a href="#minTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">min<wbr/>Timestamp</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the most recent timestamp in UTC that the value in the Min field was measured.</p>
+<p>This field shall be greater than or equal to the value of the StartTimestamp field. This field shall be less
+than or equal to the value of the EndTimestamp field.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-9" class="tsd-anchor"></a>See<a href="#See-9" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.6</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.minTimestamp</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:170</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="startSystime" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code><span>start<wbr/>Systime</span><a href="#startSystime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">start<wbr/>Systime</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the time since boot of the beginning of the measurement period.</p>
+<p>If the server had determined the time in UTC at or before the start of the measurement period, this field
+may be omitted along with the EndSystime, MinSystime, and MaxSystime fields.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-10" class="tsd-anchor"></a>See<a href="#See-10" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.8</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.startSystime</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:187</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="startTimestamp" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code><span>start<wbr/>Timestamp</span><a href="#startTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">start<wbr/>Timestamp</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><p>This field shall be the timestamp in UTC of the beginning of the measurement period.</p>
+<p>If the server had not yet determined the time in UTC at or before the beginning of the measurement period,
+or does not have the capability of determining the time in UTC, this field shall be omitted.</p>
+</div><div class="tsd-comment tsd-typography"><h4 class="tsd-anchor-link"><a id="See-11" class="tsd-anchor"></a>See<a href="#See-11" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 2.13.5.2.4</p>
+</div><aside class="tsd-sources"><p>Inherited from TypeFromSchema.startTimestamp</p><ul><li>Defined in packages/matter.js/dist/esm/cluster/definitions/ElectricalPowerMeasurementCluster.d.ts:152</li></ul></aside></section></section></details></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="tsd-otp-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Properties</summary><div><a href="#endSystime" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>end<wbr/>Systime</span></a><a href="#endTimestamp" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>end<wbr/>Timestamp</span></a><a href="#max" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>max</span></a><a href="#maxSystime" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>max<wbr/>Systime</span></a><a href="#maxTimestamp" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>max<wbr/>Timestamp</span></a><a href="#measurementType" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>measurement<wbr/>Type</span></a><a href="#min" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>min</span></a><a href="#minSystime" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>min<wbr/>Systime</span></a><a href="#minTimestamp" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>min<wbr/>Timestamp</span></a><a href="#startSystime" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>start<wbr/>Systime</span></a><a href="#startTimestamp" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>start<wbr/>Timestamp</span></a></div></details></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1"></use></svg><span>matter.js-monorepo</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base=".."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>

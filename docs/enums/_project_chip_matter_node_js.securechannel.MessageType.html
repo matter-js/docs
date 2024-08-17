@@ -1,0 +1,205 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>MessageType | matter.js-monorepo</title><meta name="description" content="Documentation for matter.js-monorepo"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #f6be46;
+    --md-sys-color-on-primary: #412d00;
+    --md-sys-color-primary-container: #5d4200;
+    --md-sys-color-on-primary-container: #ffdea3;
+    --md-sys-color-secondary: #d9c4a0;
+    --md-sys-color-on-secondary: #3b2f15;
+    --md-sys-color-secondary-container: #53452a;
+    --md-sys-color-on-secondary-container: #f6e0bb;
+    --md-sys-color-tertiary: #b2cfa8;
+    --md-sys-color-on-tertiary: #1e361a;
+    --md-sys-color-tertiary-container: #344d2f;
+    --md-sys-color-on-tertiary-container: #cdebc2;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #1e1b16;
+    --md-sys-color-on-background: #e9e1d9;
+    --md-sys-color-surface: #1e1b16;
+    --md-sys-color-on-surface: #e9e1d9;
+    --md-sys-color-surface-variant: #4e4639;
+    --md-sys-color-on-surface-variant: #d1c5b4;
+    --md-sys-color-outline: #9a8f80;
+    --md-sys-color-outline-variant: #4e4639;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e9e1d9;
+    --md-sys-color-inverse-on-surface: #34302a;
+    --md-sys-color-inverse-primary: #7a5900;
+    --md-sys-color-surface-dim: #16130e;
+    --md-sys-color-surface-bright: #3d3933;
+    --md-sys-color-surface-container-lowest: #110e09;
+    --md-sys-color-surface-container-low: #1e1b16;
+    --md-sys-color-surface-container: #221f1a;
+    --md-sys-color-surface-container-high: #2d2924;
+    --md-sys-color-surface-container-highest: #38342e
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #f6be46;
+  --md-sys-color-on-primary: #412d00;
+  --md-sys-color-primary-container: #5d4200;
+  --md-sys-color-on-primary-container: #ffdea3;
+  --md-sys-color-secondary: #d9c4a0;
+  --md-sys-color-on-secondary: #3b2f15;
+  --md-sys-color-secondary-container: #53452a;
+  --md-sys-color-on-secondary-container: #f6e0bb;
+  --md-sys-color-tertiary: #b2cfa8;
+  --md-sys-color-on-tertiary: #1e361a;
+  --md-sys-color-tertiary-container: #344d2f;
+  --md-sys-color-on-tertiary-container: #cdebc2;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #1e1b16;
+  --md-sys-color-on-background: #e9e1d9;
+  --md-sys-color-surface: #1e1b16;
+  --md-sys-color-on-surface: #e9e1d9;
+  --md-sys-color-surface-variant: #4e4639;
+  --md-sys-color-on-surface-variant: #d1c5b4;
+  --md-sys-color-outline: #9a8f80;
+  --md-sys-color-outline-variant: #4e4639;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e9e1d9;
+  --md-sys-color-inverse-on-surface: #34302a;
+  --md-sys-color-inverse-primary: #7a5900;
+  --md-sys-color-surface-dim: #16130e;
+  --md-sys-color-surface-bright: #3d3933;
+  --md-sys-color-surface-container-lowest: #110e09;
+  --md-sys-color-surface-container-low: #1e1b16;
+  --md-sys-color-surface-container: #221f1a;
+  --md-sys-color-surface-container-high: #2d2924;
+  --md-sys-color-surface-container-highest: #38342e
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #7a5900;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #ffdea3;
+    --md-sys-color-on-primary-container: #261900;
+    --md-sys-color-secondary: #6c5c3f;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #f6e0bb;
+    --md-sys-color-on-secondary-container: #251a04;
+    --md-sys-color-tertiary: #4b6545;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #cdebc2;
+    --md-sys-color-on-tertiary-container: #092007;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fffbff;
+    --md-sys-color-on-background: #1e1b16;
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #1e1b16;
+    --md-sys-color-surface-variant: #ede1cf;
+    --md-sys-color-on-surface-variant: #4e4639;
+    --md-sys-color-outline: #7f7667;
+    --md-sys-color-outline-variant: #d1c5b4;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #34302a;
+    --md-sys-color-inverse-on-surface: #f8efe7;
+    --md-sys-color-inverse-primary: #f6be46;
+    --md-sys-color-surface-dim: #e1d9d0;
+    --md-sys-color-surface-bright: #fff8f2;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fbf2e9;
+    --md-sys-color-surface-container: #f5ede4;
+    --md-sys-color-surface-container-high: #efe7de;
+    --md-sys-color-surface-container-highest: #e9e1d9
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #7a5900;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #ffdea3;
+  --md-sys-color-on-primary-container: #261900;
+  --md-sys-color-secondary: #6c5c3f;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f6e0bb;
+  --md-sys-color-on-secondary-container: #251a04;
+  --md-sys-color-tertiary: #4b6545;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #cdebc2;
+  --md-sys-color-on-tertiary-container: #092007;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fffbff;
+  --md-sys-color-on-background: #1e1b16;
+  --md-sys-color-surface: #fffbff;
+  --md-sys-color-on-surface: #1e1b16;
+  --md-sys-color-surface-variant: #ede1cf;
+  --md-sys-color-on-surface-variant: #4e4639;
+  --md-sys-color-outline: #7f7667;
+  --md-sys-color-outline-variant: #d1c5b4;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #34302a;
+  --md-sys-color-inverse-on-surface: #f8efe7;
+  --md-sys-color-inverse-primary: #f6be46;
+  --md-sys-color-surface-dim: #e1d9d0;
+  --md-sys-color-surface-bright: #fff8f2;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #fbf2e9;
+  --md-sys-color-surface-container: #f5ede4;
+  --md-sys-color-surface-container-high: #efe7de;
+  --md-sys-color-surface-container-highest: #e9e1d9
+}
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base=".."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">matter.js-monorepo</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb"><li><a href="../index.html">matter.js-monorepo</a></li><li><a href="../modules/_project_chip_matter_node_js.html">@project-chip/matter-node.js</a></li><li><a href="../modules/_project_chip_matter_node_js.securechannel.html">securechannel</a></li><li><a href="_project_chip_matter_node_js.securechannel.MessageType.html">MessageType</a></li></ul><h1>Enumeration MessageType</h1></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:7</li></ul></aside><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex="0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-chevronSmall"></use></svg> Index</h5></summary><div class="tsd-accordion-details"><section class="tsd-index-section"><h3 class="tsd-index-heading">Enumeration Members</h3><div class="tsd-index-list"><a href="_project_chip_matter_node_js.securechannel.MessageType.html#IcdCheckInMessage" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Icd<wbr/>Check<wbr/>In<wbr/>Message</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#MsgCounterSyncReq" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Msg<wbr/>Counter<wbr/>Sync<wbr/>Req</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#MsgCounterSyncRsp" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Msg<wbr/>Counter<wbr/>Sync<wbr/>Rsp</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#PasePake1" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pase<wbr/>Pake1</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#PasePake2" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pase<wbr/>Pake2</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#PasePake3" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pase<wbr/>Pake3</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#PbkdfParamRequest" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pbkdf<wbr/>Param<wbr/>Request</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#PbkdfParamResponse" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pbkdf<wbr/>Param<wbr/>Response</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#Sigma1" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Sigma1</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#Sigma2" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Sigma2</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#Sigma2Resume" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Sigma2<wbr/>Resume</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#Sigma3" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Sigma3</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#StandaloneAck" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Standalone<wbr/>Ack</span></a>
+<a href="_project_chip_matter_node_js.securechannel.MessageType.html#StatusReport" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Status<wbr/>Report</span></a>
+</div></section></div></details></section></section><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Enumeration Members"><h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg> Enumeration Members</h2></summary><section><section class="tsd-panel tsd-member"><a id="IcdCheckInMessage" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Icd<wbr/>Check<wbr/>In<wbr/>Message</span><a href="#IcdCheckInMessage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Icd<wbr/>Check<wbr/>In<wbr/>Message</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">80</span></div><div class="tsd-comment tsd-typography"><p>The Check-in message notifies a client that the ICD is available for communication.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:44</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="MsgCounterSyncReq" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Msg<wbr/>Counter<wbr/>Sync<wbr/>Req</span><a href="#MsgCounterSyncReq" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Msg<wbr/>Counter<wbr/>Sync<wbr/>Req</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div><div class="tsd-comment tsd-typography"><p>The Message Counter Synchronization Request message queries the current message counter from a peer to bootstrap
+replay protection.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:12</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="MsgCounterSyncRsp" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Msg<wbr/>Counter<wbr/>Sync<wbr/>Rsp</span><a href="#MsgCounterSyncRsp" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Msg<wbr/>Counter<wbr/>Sync<wbr/>Rsp</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div><div class="tsd-comment tsd-typography"><p>The Message Counter Synchronization Response message provides the current message counter from a peer to
+bootstrap replay protection.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:17</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="PasePake1" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Pase<wbr/>Pake1</span><a href="#PasePake1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Pase<wbr/>Pake1</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">34</span></div><div class="tsd-comment tsd-typography"><p>The first PAKE message of the PASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:28</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="PasePake2" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Pase<wbr/>Pake2</span><a href="#PasePake2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Pase<wbr/>Pake2</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">35</span></div><div class="tsd-comment tsd-typography"><p>The second PAKE message of the PASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:30</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="PasePake3" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Pase<wbr/>Pake3</span><a href="#PasePake3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Pase<wbr/>Pake3</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">36</span></div><div class="tsd-comment tsd-typography"><p>The third PAKE message of the PASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:32</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="PbkdfParamRequest" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Pbkdf<wbr/>Param<wbr/>Request</span><a href="#PbkdfParamRequest" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Pbkdf<wbr/>Param<wbr/>Request</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span></div><div class="tsd-comment tsd-typography"><p>The request for PBKDF parameters necessary to complete the PASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:24</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="PbkdfParamResponse" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Pbkdf<wbr/>Param<wbr/>Response</span><a href="#PbkdfParamResponse" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Pbkdf<wbr/>Param<wbr/>Response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">33</span></div><div class="tsd-comment tsd-typography"><p>The PBKDF parameters sent in response to PBKDFParamRequest during the PASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:26</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="Sigma1" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Sigma1</span><a href="#Sigma1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Sigma1</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">48</span></div><div class="tsd-comment tsd-typography"><p>The first message of the CASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:34</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="Sigma2" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Sigma2</span><a href="#Sigma2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Sigma2</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">49</span></div><div class="tsd-comment tsd-typography"><p>The second message of the CASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:36</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="Sigma2Resume" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Sigma2<wbr/>Resume</span><a href="#Sigma2Resume" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Sigma2<wbr/>Resume</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">51</span></div><div class="tsd-comment tsd-typography"><p>The second resumption message of the CASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:40</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="Sigma3" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Sigma3</span><a href="#Sigma3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Sigma3</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">50</span></div><div class="tsd-comment tsd-typography"><p>The third message of the CASE protocol.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:38</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="StandaloneAck" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Standalone<wbr/>Ack</span><a href="#StandaloneAck" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Standalone<wbr/>Ack</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">16</span></div><div class="tsd-comment tsd-typography"><p>This message is dedicated for the purpose of sending a stand-alone acknowledgement when there is no other data
+message available to piggyback an acknowledgement on top of.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:22</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="StatusReport" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Status<wbr/>Report</span><a href="#StatusReport" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-enum-member">Status<wbr/>Report</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">64</span></div><div class="tsd-comment tsd-typography"><p>The Status Report message encodes the result of an operation in the Secure Channel as well as other protocols.</p>
+</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/matter.js/dist/esm/protocol/securechannel/SecureChannelMessages.d.ts:42</li></ul></aside></section></section></details></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="tsd-otp-Enumeration Members"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Enumeration Members</summary><div><a href="#IcdCheckInMessage" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Icd<wbr/>Check<wbr/>In<wbr/>Message</span></a><a href="#MsgCounterSyncReq" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Msg<wbr/>Counter<wbr/>Sync<wbr/>Req</span></a><a href="#MsgCounterSyncRsp" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Msg<wbr/>Counter<wbr/>Sync<wbr/>Rsp</span></a><a href="#PasePake1" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pase<wbr/>Pake1</span></a><a href="#PasePake2" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pase<wbr/>Pake2</span></a><a href="#PasePake3" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pase<wbr/>Pake3</span></a><a href="#PbkdfParamRequest" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pbkdf<wbr/>Param<wbr/>Request</span></a><a href="#PbkdfParamResponse" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Pbkdf<wbr/>Param<wbr/>Response</span></a><a href="#Sigma1" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Sigma1</span></a><a href="#Sigma2" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Sigma2</span></a><a href="#Sigma2Resume" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Sigma2<wbr/>Resume</span></a><a href="#Sigma3" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Sigma3</span></a><a href="#StandaloneAck" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Standalone<wbr/>Ack</span></a><a href="#StatusReport" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-16"></use></svg><span>Status<wbr/>Report</span></a></div></details></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1"></use></svg><span>matter.js-monorepo</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base=".."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>
