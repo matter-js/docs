@@ -1,0 +1,535 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>protocol | matter.js-monorepo</title><meta name="description" content="Documentation for matter.js-monorepo"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #f6be46;
+    --md-sys-color-on-primary: #412d00;
+    --md-sys-color-primary-container: #5d4200;
+    --md-sys-color-on-primary-container: #ffdea3;
+    --md-sys-color-secondary: #d9c4a0;
+    --md-sys-color-on-secondary: #3b2f15;
+    --md-sys-color-secondary-container: #53452a;
+    --md-sys-color-on-secondary-container: #f6e0bb;
+    --md-sys-color-tertiary: #b2cfa8;
+    --md-sys-color-on-tertiary: #1e361a;
+    --md-sys-color-tertiary-container: #344d2f;
+    --md-sys-color-on-tertiary-container: #cdebc2;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #1e1b16;
+    --md-sys-color-on-background: #e9e1d9;
+    --md-sys-color-surface: #1e1b16;
+    --md-sys-color-on-surface: #e9e1d9;
+    --md-sys-color-surface-variant: #4e4639;
+    --md-sys-color-on-surface-variant: #d1c5b4;
+    --md-sys-color-outline: #9a8f80;
+    --md-sys-color-outline-variant: #4e4639;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e9e1d9;
+    --md-sys-color-inverse-on-surface: #34302a;
+    --md-sys-color-inverse-primary: #7a5900;
+    --md-sys-color-surface-dim: #16130e;
+    --md-sys-color-surface-bright: #3d3933;
+    --md-sys-color-surface-container-lowest: #110e09;
+    --md-sys-color-surface-container-low: #1e1b16;
+    --md-sys-color-surface-container: #221f1a;
+    --md-sys-color-surface-container-high: #2d2924;
+    --md-sys-color-surface-container-highest: #38342e
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #f6be46;
+  --md-sys-color-on-primary: #412d00;
+  --md-sys-color-primary-container: #5d4200;
+  --md-sys-color-on-primary-container: #ffdea3;
+  --md-sys-color-secondary: #d9c4a0;
+  --md-sys-color-on-secondary: #3b2f15;
+  --md-sys-color-secondary-container: #53452a;
+  --md-sys-color-on-secondary-container: #f6e0bb;
+  --md-sys-color-tertiary: #b2cfa8;
+  --md-sys-color-on-tertiary: #1e361a;
+  --md-sys-color-tertiary-container: #344d2f;
+  --md-sys-color-on-tertiary-container: #cdebc2;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #1e1b16;
+  --md-sys-color-on-background: #e9e1d9;
+  --md-sys-color-surface: #1e1b16;
+  --md-sys-color-on-surface: #e9e1d9;
+  --md-sys-color-surface-variant: #4e4639;
+  --md-sys-color-on-surface-variant: #d1c5b4;
+  --md-sys-color-outline: #9a8f80;
+  --md-sys-color-outline-variant: #4e4639;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e9e1d9;
+  --md-sys-color-inverse-on-surface: #34302a;
+  --md-sys-color-inverse-primary: #7a5900;
+  --md-sys-color-surface-dim: #16130e;
+  --md-sys-color-surface-bright: #3d3933;
+  --md-sys-color-surface-container-lowest: #110e09;
+  --md-sys-color-surface-container-low: #1e1b16;
+  --md-sys-color-surface-container: #221f1a;
+  --md-sys-color-surface-container-high: #2d2924;
+  --md-sys-color-surface-container-highest: #38342e
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #7a5900;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #ffdea3;
+    --md-sys-color-on-primary-container: #261900;
+    --md-sys-color-secondary: #6c5c3f;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #f6e0bb;
+    --md-sys-color-on-secondary-container: #251a04;
+    --md-sys-color-tertiary: #4b6545;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #cdebc2;
+    --md-sys-color-on-tertiary-container: #092007;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fffbff;
+    --md-sys-color-on-background: #1e1b16;
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #1e1b16;
+    --md-sys-color-surface-variant: #ede1cf;
+    --md-sys-color-on-surface-variant: #4e4639;
+    --md-sys-color-outline: #7f7667;
+    --md-sys-color-outline-variant: #d1c5b4;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #34302a;
+    --md-sys-color-inverse-on-surface: #f8efe7;
+    --md-sys-color-inverse-primary: #f6be46;
+    --md-sys-color-surface-dim: #e1d9d0;
+    --md-sys-color-surface-bright: #fff8f2;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fbf2e9;
+    --md-sys-color-surface-container: #f5ede4;
+    --md-sys-color-surface-container-high: #efe7de;
+    --md-sys-color-surface-container-highest: #e9e1d9
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #7a5900;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #ffdea3;
+  --md-sys-color-on-primary-container: #261900;
+  --md-sys-color-secondary: #6c5c3f;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f6e0bb;
+  --md-sys-color-on-secondary-container: #251a04;
+  --md-sys-color-tertiary: #4b6545;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #cdebc2;
+  --md-sys-color-on-tertiary-container: #092007;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fffbff;
+  --md-sys-color-on-background: #1e1b16;
+  --md-sys-color-surface: #fffbff;
+  --md-sys-color-on-surface: #1e1b16;
+  --md-sys-color-surface-variant: #ede1cf;
+  --md-sys-color-on-surface-variant: #4e4639;
+  --md-sys-color-outline: #7f7667;
+  --md-sys-color-outline-variant: #d1c5b4;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #34302a;
+  --md-sys-color-inverse-on-surface: #f8efe7;
+  --md-sys-color-inverse-primary: #f6be46;
+  --md-sys-color-surface-dim: #e1d9d0;
+  --md-sys-color-surface-bright: #fff8f2;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #fbf2e9;
+  --md-sys-color-surface-container: #f5ede4;
+  --md-sys-color-surface-container-high: #efe7de;
+  --md-sys-color-surface-container-highest: #e9e1d9
+}
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base=".."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">matter.js-monorepo</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb"><li><a href="../modules.html">matter.js-monorepo</a></li><li><a href="_matter_main.html">@matter/main</a></li><li><a href="_matter_main.protocol.html">protocol</a></li></ul><h1>Module protocol</h1></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/lauckhart/matter.js/blob/fea54aba9b34bc23041aa37c7fff8438025dd60c/packages/main/src/protocol.ts#L1">packages/main/src/protocol.ts:1</a></li></ul></aside><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex="0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-chevronSmall"></use></svg> Index</h5></summary><div class="tsd-accordion-details"><section class="tsd-index-section"><h3 class="tsd-index-heading">References</h3><div class="tsd-index-list"><a href="_matter_main.protocol.html#Base64" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Base64</span></a>
+<a href="_matter_main.protocol.html#DerCodec" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Der<wbr/>Codec</span></a>
+<a href="_matter_main.protocol.html#DerKey" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Der<wbr/>Key</span></a>
+<a href="_matter_main.protocol.html#DerNode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Der<wbr/>Node</span></a>
+<a href="_matter_main.protocol.html#DnsCodec" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Dns<wbr/>Codec</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Namespaces</h3><div class="tsd-index-list"><a href="_matter_main.protocol.CertificateManager.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4"></use></svg><span>Certificate<wbr/>Manager</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Enumerations</h3><div class="tsd-index-list"><a href="../enums/_matter_main.protocol.AnnouncementType.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Announcement<wbr/>Type</span></a>
+<a href="../enums/_matter_main.protocol.BtpHeaderBits.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Btp<wbr/>Header<wbr/>Bits</span></a>
+<a href="../enums/_matter_main.protocol.BtpOpcode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Btp<wbr/>Opcode</span></a>
+<a href="../enums/_matter_main.protocol.CommissioningMode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Commissioning<wbr/>Mode</span></a>
+<a href="../enums/_matter_main.protocol.FabricAction.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Fabric<wbr/>Action</span></a>
+<a href="../enums/_matter_main.protocol.MessageCounterTypes.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Message<wbr/>Counter<wbr/>Types</span></a>
+<a href="../enums/_matter_main.protocol.MessageType.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Message<wbr/>Type</span></a>
+<a href="../enums/_matter_main.protocol.NodeDiscoveryType.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Node<wbr/>Discovery<wbr/>Type</span></a>
+<a href="../enums/_matter_main.protocol.SessionType.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-8"></use></svg><span>Session<wbr/>Type</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Classes</h3><div class="tsd-index-list"><a href="../classes/_matter_main.protocol.AccessControlManager.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Access<wbr/>Control<wbr/>Manager</span></a>
+<a href="../classes/_matter_main.protocol.AccessDeniedError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Access<wbr/>Denied<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.AttestationCertificateManager.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Attestation<wbr/>Certificate<wbr/>Manager</span></a>
+<a href="../classes/_matter_main.protocol.AttributeClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Attribute<wbr/>Client</span></a>
+<a href="../classes/_matter_main.protocol.AttributeServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Attribute<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.BaseAttributeServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Base<wbr/>Attribute<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.Ble.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Ble</span></a>
+<a href="../classes/_matter_main.protocol.BleChannel.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Ble<wbr/>Channel</span></a>
+<a href="../classes/_matter_main.protocol.BleError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Ble<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.BtpCodec.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Btp<wbr/>Codec</span></a>
+<a href="../classes/_matter_main.protocol.BtpFlowError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Btp<wbr/>Flow<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.BtpMatterError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Btp<wbr/>Matter<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.BtpProtocolError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Btp<wbr/>Protocol<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.BtpSessionHandler.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Btp<wbr/>Session<wbr/>Handler</span></a>
+<a href="../classes/_matter_main.protocol.CaseClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Case<wbr/>Client</span></a>
+<a href="../classes/_matter_main.protocol.CaseClientMessenger.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Case<wbr/>Client<wbr/>Messenger</span></a>
+<a href="../classes/_matter_main.protocol.CaseServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Case<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.CaseServerMessenger.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Case<wbr/>Server<wbr/>Messenger</span></a>
+<a href="../classes/_matter_main.protocol.CertificateAuthority.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Certificate<wbr/>Authority</span></a>
+<a href="../classes/_matter_main.protocol.CertificateError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Certificate<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.CertificationDeclarationManager.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Certification<wbr/>Declaration<wbr/>Manager</span></a>
+<a href="../classes/_matter_main.protocol.ChannelManager.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Channel<wbr/>Manager</span></a>
+<a href="../classes/_matter_main.protocol.ChannelNotConnectedError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Channel<wbr/>Not<wbr/>Connected<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.ChannelStatusResponseError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Channel<wbr/>Status<wbr/>Response<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.CommandServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Command<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.CommissioningConfigProvider.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Commissioning<wbr/>Config<wbr/>Provider</span></a>
+<a href="../classes/_matter_main.protocol.CommissioningError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Commissioning<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.ControllerCommissioner.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Controller<wbr/>Commissioner</span></a>
+<a href="../classes/_matter_main.protocol.ControllerCommissioningFlow.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Controller<wbr/>Commissioning<wbr/>Flow</span></a>
+<a href="../classes/_matter_main.protocol.ControllerDiscovery.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Controller<wbr/>Discovery</span></a>
+<a href="../classes/_matter_main.protocol.DedicatedChannelExchangeProvider.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Dedicated<wbr/>Channel<wbr/>Exchange<wbr/>Provider</span></a>
+<a href="../classes/_matter_main.protocol.DeviceAdvertiser.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Device<wbr/>Advertiser</span></a>
+<a href="../classes/_matter_main.protocol.DeviceCertification.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Device<wbr/>Certification</span></a>
+<a href="../classes/_matter_main.protocol.DeviceCommissioner.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Device<wbr/>Commissioner</span></a>
+<a href="../classes/_matter_main.protocol.DiscoveryError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Discovery<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.DuplicateMessageError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Duplicate<wbr/>Message<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.EventClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Event<wbr/>Client</span></a>
+<a href="../classes/_matter_main.protocol.EventHandler.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Event<wbr/>Handler</span></a>
+<a href="../classes/_matter_main.protocol.EventServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Event<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.ExchangeCounter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Exchange<wbr/>Counter</span></a>
+<a href="../classes/_matter_main.protocol.ExchangeManager.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Exchange<wbr/>Manager</span></a>
+<a href="../classes/_matter_main.protocol.ExchangeProvider.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Exchange<wbr/>Provider</span></a>
+<a href="../classes/_matter_main.protocol.Fabric.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric</span></a>
+<a href="../classes/_matter_main.protocol.FabricAuthority.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Authority</span></a>
+<a href="../classes/_matter_main.protocol.FabricAuthorityConfigurationProvider.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Authority<wbr/>Configuration<wbr/>Provider</span></a>
+<a href="../classes/_matter_main.protocol.FabricBuilder.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Builder</span></a>
+<a href="../classes/_matter_main.protocol.FabricManager.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Manager</span></a>
+<a href="../classes/_matter_main.protocol.FabricNotFoundError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Not<wbr/>Found<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.FabricScopedAttributeServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Scoped<wbr/>Attribute<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.FabricScopeError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Scope<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.FabricSensitiveEventServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Sensitive<wbr/>Event<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.FabricTableFullError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fabric<wbr/>Table<wbr/>Full<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.FailsafeContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Failsafe<wbr/>Context</span></a>
+<a href="../classes/_matter_main.protocol.FailsafeTimer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Failsafe<wbr/>Timer</span></a>
+<a href="../classes/_matter_main.protocol.FixedAttributeServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Fixed<wbr/>Attribute<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.IncomingInteractionClientMessenger.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Incoming<wbr/>Interaction<wbr/>Client<wbr/>Messenger</span></a>
+<a href="../classes/_matter_main.protocol.InsecureSession.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Insecure<wbr/>Session</span></a>
+<a href="../classes/_matter_main.protocol.InteractionClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Interaction<wbr/>Client</span></a>
+<a href="../classes/_matter_main.protocol.InteractionClientMessenger.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Interaction<wbr/>Client<wbr/>Messenger</span></a>
+<a href="../classes/_matter_main.protocol.InteractionEndpointStructure.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Interaction<wbr/>Endpoint<wbr/>Structure</span></a>
+<a href="../classes/_matter_main.protocol.InteractionServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Interaction<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.InteractionServerMessenger.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Interaction<wbr/>Server<wbr/>Messenger</span></a>
+<a href="../classes/_matter_main.protocol.MatterFabricConflictError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Matter<wbr/>Fabric<wbr/>Conflict<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.MatterFabricInvalidAdminSubjectError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Matter<wbr/>Fabric<wbr/>Invalid<wbr/>Admin<wbr/>Subject<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.MaximumPasePairingErrorsReachedError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Maximum<wbr/>Pase<wbr/>Pairing<wbr/>Errors<wbr/>Reached<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.MdnsBroadcaster.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Mdns<wbr/>Broadcaster</span></a>
+<a href="../classes/_matter_main.protocol.MdnsInstanceBroadcaster.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Mdns<wbr/>Instance<wbr/>Broadcaster</span></a>
+<a href="../classes/_matter_main.protocol.MdnsScanner.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Mdns<wbr/>Scanner</span></a>
+<a href="../classes/_matter_main.protocol.MdnsServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Mdns<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.MdnsService.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Mdns<wbr/>Service</span></a>
+<a href="../classes/_matter_main.protocol.MessageChannel.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Message<wbr/>Channel</span></a>
+<a href="../classes/_matter_main.protocol.MessageCodec.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Message<wbr/>Codec</span></a>
+<a href="../classes/_matter_main.protocol.MessageCounter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Message<wbr/>Counter</span></a>
+<a href="../classes/_matter_main.protocol.MessageExchange.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Message<wbr/>Exchange</span></a>
+<a href="../classes/_matter_main.protocol.MessageReceptionState.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Message<wbr/>Reception<wbr/>State</span></a>
+<a href="../classes/_matter_main.protocol.MessageReceptionStateEncryptedWithoutRollover.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Message<wbr/>Reception<wbr/>State<wbr/>Encrypted<wbr/>Without<wbr/>Rollover</span></a>
+<a href="../classes/_matter_main.protocol.MessageReceptionStateEncryptedWithRollover.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Message<wbr/>Reception<wbr/>State<wbr/>Encrypted<wbr/>With<wbr/>Rollover</span></a>
+<a href="../classes/_matter_main.protocol.MessageReceptionStateUnencryptedWithRollover.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Message<wbr/>Reception<wbr/>State<wbr/>Unencrypted<wbr/>With<wbr/>Rollover</span></a>
+<a href="../classes/_matter_main.protocol.NoAssociatedFabricError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>No<wbr/>Associated<wbr/>Fabric<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.NoChannelError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>No<wbr/>Channel<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.PairRetransmissionLimitReachedError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Pair<wbr/>Retransmission<wbr/>Limit<wbr/>Reached<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.PaseClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Pase<wbr/>Client</span></a>
+<a href="../classes/_matter_main.protocol.PaseClientMessenger.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Pase<wbr/>Client<wbr/>Messenger</span></a>
+<a href="../classes/_matter_main.protocol.PaseServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Pase<wbr/>Server</span></a>
+<a href="../classes/_matter_main.protocol.PaseServerMessenger.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Pase<wbr/>Server<wbr/>Messenger</span></a>
+<a href="../classes/_matter_main.protocol.PeerAddressMap.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Peer<wbr/>Address<wbr/>Map</span></a>
+<a href="../classes/_matter_main.protocol.PeerAddressStore.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Peer<wbr/>Address<wbr/>Store</span></a>
+<a href="../classes/_matter_main.protocol.PeerDataStore.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Peer<wbr/>Data<wbr/>Store</span></a>
+<a href="../classes/_matter_main.protocol.PeerSet.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Peer<wbr/>Set</span></a>
+<a href="../classes/_matter_main.protocol.PersistedMessageCounter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Persisted<wbr/>Message<wbr/>Counter</span></a>
+<a href="../classes/_matter_main.protocol.PublicKeyError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Public<wbr/>Key<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.ReconnectableExchangeProvider.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Reconnectable<wbr/>Exchange<wbr/>Provider</span></a>
+<a href="../classes/_matter_main.protocol.RetransmissionLimitReachedError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Retransmission<wbr/>Limit<wbr/>Reached<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.ScannerSet.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Scanner<wbr/>Set</span></a>
+<a href="../classes/_matter_main.protocol.SecureChannelMessenger.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Secure<wbr/>Channel<wbr/>Messenger</span></a>
+<a href="../classes/_matter_main.protocol.SecureChannelProtocol.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Secure<wbr/>Channel<wbr/>Protocol</span></a>
+<a href="../classes/_matter_main.protocol.SecureChannelStatusMessageSchema.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Secure<wbr/>Channel<wbr/>Status<wbr/>Message<wbr/>Schema</span></a>
+<a href="../classes/_matter_main.protocol.SecureSession.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Secure<wbr/>Session</span></a>
+<a href="../classes/_matter_main.protocol.ServerSubscription.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Server<wbr/>Subscription</span></a>
+<a href="../classes/_matter_main.protocol.Session.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Session</span></a>
+<a href="../classes/_matter_main.protocol.SessionManager.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Session<wbr/>Manager</span></a>
+<a href="../classes/_matter_main.protocol.StatusReportOnlySecureChannelProtocol.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Status<wbr/>Report<wbr/>Only<wbr/>Secure<wbr/>Channel<wbr/>Protocol</span></a>
+<a href="../classes/_matter_main.protocol.Subscription.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Subscription</span></a>
+<a href="../classes/_matter_main.protocol.SubscriptionClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Subscription<wbr/>Client</span></a>
+<a href="../classes/_matter_main.protocol.SupportedAttributeClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Supported<wbr/>Attribute<wbr/>Client</span></a>
+<a href="../classes/_matter_main.protocol.UnexpectedMessageError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Unexpected<wbr/>Message<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.UnknownNodeError.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Unknown<wbr/>Node<wbr/>Error</span></a>
+<a href="../classes/_matter_main.protocol.UnknownSupportedAttributeClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-128"></use></svg><span>Unknown<wbr/>Supported<wbr/>Attribute<wbr/>Client</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Interfaces</h3><div class="tsd-index-list"><a href="../interfaces/_matter_main.protocol.AttributePath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Attribute<wbr/>Path</span></a>
+<a href="../interfaces/_matter_main.protocol.AttributeStatus.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Attribute<wbr/>Status</span></a>
+<a href="../interfaces/_matter_main.protocol.AttributeWithPath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Attribute<wbr/>With<wbr/>Path</span></a>
+<a href="../interfaces/_matter_main.protocol.BtpHandshakeRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Btp<wbr/>Handshake<wbr/>Request</span></a>
+<a href="../interfaces/_matter_main.protocol.BtpHandshakeResponse.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Btp<wbr/>Handshake<wbr/>Response</span></a>
+<a href="../interfaces/_matter_main.protocol.BtpHeader.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Btp<wbr/>Header</span></a>
+<a href="../interfaces/_matter_main.protocol.BtpPacket.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Btp<wbr/>Packet</span></a>
+<a href="../interfaces/_matter_main.protocol.BtpPacketPayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Btp<wbr/>Packet<wbr/>Payload</span></a>
+<a href="../interfaces/_matter_main.protocol.ClusterDatasource.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Cluster<wbr/>Datasource</span></a>
+<a href="../interfaces/_matter_main.protocol.ClusterServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Cluster<wbr/>Server</span></a>
+<a href="../interfaces/_matter_main.protocol.CommandPath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Command<wbr/>Path</span></a>
+<a href="../interfaces/_matter_main.protocol.CommandWithPath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Command<wbr/>With<wbr/>Path</span></a>
+<a href="../interfaces/_matter_main.protocol.CommissioningModeInstanceData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Commissioning<wbr/>Mode<wbr/>Instance<wbr/>Data</span></a>
+<a href="../interfaces/_matter_main.protocol.CommissioningOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Commissioning<wbr/>Options</span></a>
+<a href="../interfaces/_matter_main.protocol.ControllerCommissionerContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Controller<wbr/>Commissioner<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.DecodedBtpPacket.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Decoded<wbr/>Btp<wbr/>Packet</span></a>
+<a href="../interfaces/_matter_main.protocol.DecodedBtpPacketPayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Decoded<wbr/>Btp<wbr/>Packet<wbr/>Payload</span></a>
+<a href="../interfaces/_matter_main.protocol.DecodedMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Decoded<wbr/>Message</span></a>
+<a href="../interfaces/_matter_main.protocol.DecodedPacket.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Decoded<wbr/>Packet</span></a>
+<a href="../interfaces/_matter_main.protocol.DecodedPacketHeader.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Decoded<wbr/>Packet<wbr/>Header</span></a>
+<a href="../interfaces/_matter_main.protocol.DeviceAdvertiserContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Device<wbr/>Advertiser<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.DeviceAttestationCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Device<wbr/>Attestation<wbr/>Certificate</span></a>
+<a href="../interfaces/_matter_main.protocol.DeviceCommissionerContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Device<wbr/>Commissioner<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.DiscoveryAndCommissioningOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Discovery<wbr/>And<wbr/>Commissioning<wbr/>Options</span></a>
+<a href="../interfaces/_matter_main.protocol.DiscoveryOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Discovery<wbr/>Options</span></a>
+<a href="../interfaces/_matter_main.protocol.EndpointInterface.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Endpoint<wbr/>Interface</span></a>
+<a href="../interfaces/_matter_main.protocol.EventData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Event<wbr/>Data</span></a>
+<a href="../interfaces/_matter_main.protocol.EventPath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Event<wbr/>Path</span></a>
+<a href="../interfaces/_matter_main.protocol.EventStorageData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Event<wbr/>Storage<wbr/>Data</span></a>
+<a href="../interfaces/_matter_main.protocol.EventWithPath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Event<wbr/>With<wbr/>Path</span></a>
+<a href="../interfaces/_matter_main.protocol.ExchangeManagerContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Exchange<wbr/>Manager<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.FabricAuthorityContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Fabric<wbr/>Authority<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.InstanceBroadcaster.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Instance<wbr/>Broadcaster</span></a>
+<a href="../interfaces/_matter_main.protocol.InteractionContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Interaction<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.InteractionRecipient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Interaction<wbr/>Recipient</span></a>
+<a href="../interfaces/_matter_main.protocol.LocatedNodeCommissioningOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Located<wbr/>Node<wbr/>Commissioning<wbr/>Options</span></a>
+<a href="../interfaces/_matter_main.protocol.Message.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Message</span></a>
+<a href="../interfaces/_matter_main.protocol.MessageExchangeContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Message<wbr/>Exchange<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.OperationalPeer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Operational<wbr/>Peer</span></a>
+<a href="../interfaces/_matter_main.protocol.Packet.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Packet</span></a>
+<a href="../interfaces/_matter_main.protocol.PacketHeader.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Packet<wbr/>Header</span></a>
+<a href="../interfaces/_matter_main.protocol.PayloadHeader.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Payload<wbr/>Header</span></a>
+<a href="../interfaces/_matter_main.protocol.PeerAddress.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Peer<wbr/>Address</span></a>
+<a href="../interfaces/_matter_main.protocol.PeerSetContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Peer<wbr/>Set<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.ProductAttestationAuthorityCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Product<wbr/>Attestation<wbr/>Authority<wbr/>Certificate</span></a>
+<a href="../interfaces/_matter_main.protocol.ProductAttestationIntermediateCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Product<wbr/>Attestation<wbr/>Intermediate<wbr/>Certificate</span></a>
+<a href="../interfaces/_matter_main.protocol.ProtocolHandler.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Protocol<wbr/>Handler</span></a>
+<a href="../interfaces/_matter_main.protocol.ResumptionRecord.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Resumption<wbr/>Record</span></a>
+<a href="../interfaces/_matter_main.protocol.Scanner.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Scanner</span></a>
+<a href="../interfaces/_matter_main.protocol.ServerSubscriptionConfig.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Server<wbr/>Subscription<wbr/>Config</span></a>
+<a href="../interfaces/_matter_main.protocol.ServerSubscriptionContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Server<wbr/>Subscription<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.SessionManagerContext.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Session<wbr/>Manager<wbr/>Context</span></a>
+<a href="../interfaces/_matter_main.protocol.SessionParameters.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Session<wbr/>Parameters</span></a>
+<a href="../interfaces/_matter_main.protocol.SubscriptionCriteria.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-256"></use></svg><span>Subscription<wbr/>Criteria</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Type Aliases</h3><div class="tsd-index-list"><a href="../types/_matter_main.protocol.AclEntry.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Acl<wbr/>Entry</span></a>
+<a href="../types/_matter_main.protocol.AclExtensionEntry.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Acl<wbr/>Extension<wbr/>Entry</span></a>
+<a href="../types/_matter_main.protocol.AclExtensionList.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Acl<wbr/>Extension<wbr/>List</span></a>
+<a href="../types/_matter_main.protocol.AclList.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Acl<wbr/>List</span></a>
+<a href="../types/_matter_main.protocol.AddressTypeFromDevice.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Address<wbr/>Type<wbr/>From<wbr/>Device</span></a>
+<a href="../types/_matter_main.protocol.AnyAttributeServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Any<wbr/>Attribute<wbr/>Server</span></a>
+<a href="../types/_matter_main.protocol.AnyEventServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Any<wbr/>Event<wbr/>Server</span></a>
+<a href="../types/_matter_main.protocol.AttributeClients.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Attribute<wbr/>Clients</span></a>
+<a href="../types/_matter_main.protocol.AttributeClientValues.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Attribute<wbr/>Client<wbr/>Values</span></a>
+<a href="../types/_matter_main.protocol.AttributeReportPayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Attribute<wbr/>Report<wbr/>Payload</span></a>
+<a href="../types/_matter_main.protocol.BaseCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Base<wbr/>Certificate</span></a>
+<a href="../types/_matter_main.protocol.ClusterClientObj.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Cluster<wbr/>Client<wbr/>Obj</span></a>
+<a href="../types/_matter_main.protocol.ClusterClientObjInternal.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Cluster<wbr/>Client<wbr/>Obj<wbr/>Internal</span></a>
+<a href="../types/_matter_main.protocol.CommissionableDevice.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Commissionable<wbr/>Device</span></a>
+<a href="../types/_matter_main.protocol.CommissionableDeviceIdentifiers.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Commissionable<wbr/>Device<wbr/>Identifiers</span></a>
+<a href="../types/_matter_main.protocol.CommissionerInstanceData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Commissioner<wbr/>Instance<wbr/>Data</span></a>
+<a href="../types/_matter_main.protocol.ControllerCommissioningFlowOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Controller<wbr/>Commissioning<wbr/>Flow<wbr/>Options</span></a>
+<a href="../types/_matter_main.protocol.DataReport.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Data<wbr/>Report</span></a>
+<a href="../types/_matter_main.protocol.DataReportPayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Data<wbr/>Report<wbr/>Payload</span></a>
+<a href="../types/_matter_main.protocol.DecodedAttributeReportValue.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Decoded<wbr/>Attribute<wbr/>Report<wbr/>Value</span></a>
+<a href="../types/_matter_main.protocol.DecodedAttributeValue.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Decoded<wbr/>Attribute<wbr/>Value</span></a>
+<a href="../types/_matter_main.protocol.DecodedEventData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Decoded<wbr/>Event<wbr/>Data</span></a>
+<a href="../types/_matter_main.protocol.DecodedEventReportValue.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Decoded<wbr/>Event<wbr/>Report<wbr/>Value</span></a>
+<a href="../types/_matter_main.protocol.DiscoverableDevice.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Discoverable<wbr/>Device</span></a>
+<a href="../types/_matter_main.protocol.DiscoveryData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Discovery<wbr/>Data</span></a>
+<a href="../types/_matter_main.protocol.EndpointLoggingOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Endpoint<wbr/>Logging<wbr/>Options</span></a>
+<a href="../types/_matter_main.protocol.EventClients.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Event<wbr/>Clients</span></a>
+<a href="../types/_matter_main.protocol.EventDataPayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Event<wbr/>Data<wbr/>Payload</span></a>
+<a href="../types/_matter_main.protocol.EventReportPayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Event<wbr/>Report<wbr/>Payload</span></a>
+<a href="../types/_matter_main.protocol.ExchangeSendOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Exchange<wbr/>Send<wbr/>Options</span></a>
+<a href="../types/_matter_main.protocol.ExposedFabricInformation.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Exposed<wbr/>Fabric<wbr/>Information</span></a>
+<a href="../types/_matter_main.protocol.IncomingSubjectDescriptor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Incoming<wbr/>Subject<wbr/>Descriptor</span></a>
+<a href="../types/_matter_main.protocol.IntermediateCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Intermediate<wbr/>Certificate</span></a>
+<a href="../types/_matter_main.protocol.InvokeRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Invoke<wbr/>Request</span></a>
+<a href="../types/_matter_main.protocol.InvokeResponse.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Invoke<wbr/>Response</span></a>
+<a href="../types/_matter_main.protocol.OperationalCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Operational<wbr/>Certificate</span></a>
+<a href="../types/_matter_main.protocol.OperationalDevice.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Operational<wbr/>Device</span></a>
+<a href="../types/_matter_main.protocol.OperationalInstanceData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Operational<wbr/>Instance<wbr/>Data</span></a>
+<a href="../types/_matter_main.protocol.ReadRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Read<wbr/>Request</span></a>
+<a href="../types/_matter_main.protocol.RootCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Root<wbr/>Certificate</span></a>
+<a href="../types/_matter_main.protocol.SessionParameterOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Session<wbr/>Parameter<wbr/>Options</span></a>
+<a href="../types/_matter_main.protocol.SignatureFromCommandSpec.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Signature<wbr/>From<wbr/>Command<wbr/>Spec</span></a>
+<a href="../types/_matter_main.protocol.StatusMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Status<wbr/>Message</span></a>
+<a href="../types/_matter_main.protocol.SubscribeRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Subscribe<wbr/>Request</span></a>
+<a href="../types/_matter_main.protocol.SubscribeResponse.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Subscribe<wbr/>Response</span></a>
+<a href="../types/_matter_main.protocol.SubscriptionId.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Subscription<wbr/>Id</span></a>
+<a href="../types/_matter_main.protocol.TimedRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Timed<wbr/>Request</span></a>
+<a href="../types/_matter_main.protocol.Unsigned.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Unsigned</span></a>
+<a href="../types/_matter_main.protocol.WriteRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Write<wbr/>Request</span></a>
+<a href="../types/_matter_main.protocol.WriteResponse.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2097152"></use></svg><span>Write<wbr/>Response</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Variables</h3><div class="tsd-index-list"><a href="../variables/_matter_main.protocol.BLE_MATTER_C1_CHARACTERISTIC_UUID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BLE_<wbr/>MATTER_<wbr/>C1_<wbr/>CHARACTERISTIC_<wbr/>UUID</span></a>
+<a href="../variables/_matter_main.protocol.BLE_MATTER_C2_CHARACTERISTIC_UUID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BLE_<wbr/>MATTER_<wbr/>C2_<wbr/>CHARACTERISTIC_<wbr/>UUID</span></a>
+<a href="../variables/_matter_main.protocol.BLE_MATTER_C3_CHARACTERISTIC_UUID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BLE_<wbr/>MATTER_<wbr/>C3_<wbr/>CHARACTERISTIC_<wbr/>UUID</span></a>
+<a href="../variables/_matter_main.protocol.BLE_MATTER_SERVICE_UUID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BLE_<wbr/>MATTER_<wbr/>SERVICE_<wbr/>UUID</span></a>
+<a href="../variables/_matter_main.protocol.BLE_MAX_MATTER_PAYLOAD_SIZE.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BLE_<wbr/>MAX_<wbr/>MATTER_<wbr/>PAYLOAD_<wbr/>SIZE</span></a>
+<a href="../variables/_matter_main.protocol.BLE_MAXIMUM_BTP_MTU.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BLE_<wbr/>MAXIMUM_<wbr/>BTP_<wbr/>MTU</span></a>
+<a href="../variables/_matter_main.protocol.BLE_MINIMUM_ATT_MTU.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BLE_<wbr/>MINIMUM_<wbr/>ATT_<wbr/>MTU</span></a>
+<a href="../variables/_matter_main.protocol.BTP_ACK_TIMEOUT_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BTP_<wbr/>ACK_<wbr/>TIMEOUT_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.BTP_CONN_IDLE_TIMEOUT.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BTP_<wbr/>CONN_<wbr/>IDLE_<wbr/>TIMEOUT</span></a>
+<a href="../variables/_matter_main.protocol.BTP_CONN_RSP_TIMEOUT_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BTP_<wbr/>CONN_<wbr/>RSP_<wbr/>TIMEOUT_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.BTP_MAXIMUM_WINDOW_SIZE.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BTP_<wbr/>MAXIMUM_<wbr/>WINDOW_<wbr/>SIZE</span></a>
+<a href="../variables/_matter_main.protocol.BTP_SEND_ACK_TIMEOUT_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BTP_<wbr/>SEND_<wbr/>ACK_<wbr/>TIMEOUT_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.BTP_SUPPORTED_VERSIONS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>BTP_<wbr/>SUPPORTED_<wbr/>VERSIONS</span></a>
+<a href="../variables/_matter_main.protocol.DEFAULT_ADMIN_VENDOR_ID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>DEFAULT_<wbr/>ADMIN_<wbr/>VENDOR_<wbr/>ID</span></a>
+<a href="../variables/_matter_main.protocol.DEFAULT_EXPECTED_PROCESSING_TIME_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>DEFAULT_<wbr/>EXPECTED_<wbr/>PROCESSING_<wbr/>TIME_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.DEFAULT_FABRIC_ID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>DEFAULT_<wbr/>FABRIC_<wbr/>ID</span></a>
+<a href="../variables/_matter_main.protocol.DEFAULT_NORMAL_PROCESSING_TIME_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>DEFAULT_<wbr/>NORMAL_<wbr/>PROCESSING_<wbr/>TIME_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.DEFAULT_PASSCODE_ID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>DEFAULT_<wbr/>PASSCODE_<wbr/>ID</span></a>
+<a href="../variables/_matter_main.protocol.DEFAULT_RANDOMIZATION_WINDOW_S.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>DEFAULT_<wbr/>RANDOMIZATION_<wbr/>WINDOW_<wbr/>S</span></a>
+<a href="../variables/_matter_main.protocol.EXPECTED_CRYPTO_PROCESSING_TIME_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>EXPECTED_<wbr/>CRYPTO_<wbr/>PROCESSING_<wbr/>TIME_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.FALLBACK_DATAMODEL_REVISION.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>FALLBACK_<wbr/>DATAMODEL_<wbr/>REVISION</span></a>
+<a href="../variables/_matter_main.protocol.FALLBACK_INTERACTIONMODEL_REVISION.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>FALLBACK_<wbr/>INTERACTIONMODEL_<wbr/>REVISION</span></a>
+<a href="../variables/_matter_main.protocol.FALLBACK_MAX_PATHS_PER_INVOKE.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>FALLBACK_<wbr/>MAX_<wbr/>PATHS_<wbr/>PER_<wbr/>INVOKE</span></a>
+<a href="../variables/_matter_main.protocol.FALLBACK_SPECIFICATION_VERSION.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>FALLBACK_<wbr/>SPECIFICATION_<wbr/>VERSION</span></a>
+<a href="../variables/_matter_main.protocol.INTERNAL_INTERVAL_PUBLISHER_LIMIT_S.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>INTERNAL_<wbr/>INTERVAL_<wbr/>PUBLISHER_<wbr/>LIMIT_<wbr/>S</span></a>
+<a href="../variables/_matter_main.protocol.KDFSR1_KEY_INFO.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>KDFSR1_<wbr/>KEY_<wbr/>INFO</span></a>
+<a href="../variables/_matter_main.protocol.KDFSR2_INFO.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>KDFSR2_<wbr/>INFO</span></a>
+<a href="../variables/_matter_main.protocol.KDFSR2_KEY_INFO.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>KDFSR2_<wbr/>KEY_<wbr/>INFO</span></a>
+<a href="../variables/_matter_main.protocol.KDFSR3_INFO.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>KDFSR3_<wbr/>INFO</span></a>
+<a href="../variables/_matter_main.protocol.MATTER_COMMISSION_SERVICE_QNAME.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MATTER_<wbr/>COMMISSION_<wbr/>SERVICE_<wbr/>QNAME</span></a>
+<a href="../variables/_matter_main.protocol.MATTER_COMMISSIONER_SERVICE_QNAME.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MATTER_<wbr/>COMMISSIONER_<wbr/>SERVICE_<wbr/>QNAME</span></a>
+<a href="../variables/_matter_main.protocol.MATTER_MESSAGE_OVERHEAD.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MATTER_<wbr/>MESSAGE_<wbr/>OVERHEAD</span></a>
+<a href="../variables/_matter_main.protocol.MATTER_SERVICE_QNAME.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MATTER_<wbr/>SERVICE_<wbr/>QNAME</span></a>
+<a href="../variables/_matter_main.protocol.MAX_COUNTER_VALUE_32BIT.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MAX_<wbr/>COUNTER_<wbr/>VALUE_<wbr/>32BIT</span></a>
+<a href="../variables/_matter_main.protocol.MAX_INTERVAL_PUBLISHER_LIMIT_S.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MAX_<wbr/>INTERVAL_<wbr/>PUBLISHER_<wbr/>LIMIT_<wbr/>S</span></a>
+<a href="../variables/_matter_main.protocol.MDNS_BROADCAST_IPV4.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MDNS_<wbr/>BROADCAST_<wbr/>IPV4</span></a>
+<a href="../variables/_matter_main.protocol.MDNS_BROADCAST_IPV6.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MDNS_<wbr/>BROADCAST_<wbr/>IPV6</span></a>
+<a href="../variables/_matter_main.protocol.MDNS_BROADCAST_PORT.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MDNS_<wbr/>BROADCAST_<wbr/>PORT</span></a>
+<a href="../variables/_matter_main.protocol.MIN_INTERVAL_S.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>MIN_<wbr/>INTERVAL_<wbr/>S</span></a>
+<a href="../variables/_matter_main.protocol.PairingHintBitmap.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Pairing<wbr/>Hint<wbr/>Bitmap</span></a>
+<a href="../variables/_matter_main.protocol.PairingHintBitmapSchema.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Pairing<wbr/>Hint<wbr/>Bitmap<wbr/>Schema</span></a>
+<a href="../variables/_matter_main.protocol.RESUME1_MIC_NONCE.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>RESUME1_<wbr/>MIC_<wbr/>NONCE</span></a>
+<a href="../variables/_matter_main.protocol.RESUME2_MIC_NONCE.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>RESUME2_<wbr/>MIC_<wbr/>NONCE</span></a>
+<a href="../variables/_matter_main.protocol.SERVICE_DISCOVERY_QNAME.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>SERVICE_<wbr/>DISCOVERY_<wbr/>QNAME</span></a>
+<a href="../variables/_matter_main.protocol.SESSION_ACTIVE_INTERVAL_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>SESSION_<wbr/>ACTIVE_<wbr/>INTERVAL_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.SESSION_ACTIVE_THRESHOLD_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>SESSION_<wbr/>ACTIVE_<wbr/>THRESHOLD_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.SESSION_IDLE_INTERVAL_MS.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>SESSION_<wbr/>IDLE_<wbr/>INTERVAL_<wbr/>MS</span></a>
+<a href="../variables/_matter_main.protocol.SPAKE_CONTEXT.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>SPAKE_<wbr/>CONTEXT</span></a>
+<a href="../variables/_matter_main.protocol.TBE_DATA2_NONCE.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>TBE_<wbr/>DATA2_<wbr/>NONCE</span></a>
+<a href="../variables/_matter_main.protocol.TBE_DATA3_NONCE.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>TBE_<wbr/>DATA3_<wbr/>NONCE</span></a>
+<a href="../variables/_matter_main.protocol.TestCert_PAA_FFF1_Cert.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Test<wbr/>Cert_<wbr/>PAA_<wbr/>FFF1_<wbr/>Cert</span></a>
+<a href="../variables/_matter_main.protocol.TestCert_PAA_FFF1_PrivateKey.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Test<wbr/>Cert_<wbr/>PAA_<wbr/>FFF1_<wbr/>Private<wbr/>Key</span></a>
+<a href="../variables/_matter_main.protocol.TestCert_PAA_FFF1_PublicKey.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Test<wbr/>Cert_<wbr/>PAA_<wbr/>FFF1_<wbr/>Public<wbr/>Key</span></a>
+<a href="../variables/_matter_main.protocol.TestCert_PAA_FFF1_SKID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Test<wbr/>Cert_<wbr/>PAA_<wbr/>FFF1_<wbr/>SKID</span></a>
+<a href="../variables/_matter_main.protocol.TestCert_PAA_NoVID_Cert.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Test<wbr/>Cert_<wbr/>PAA_<wbr/>NoVID_<wbr/>Cert</span></a>
+<a href="../variables/_matter_main.protocol.TestCert_PAA_NoVID_PrivateKey.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Test<wbr/>Cert_<wbr/>PAA_<wbr/>NoVID_<wbr/>Private<wbr/>Key</span></a>
+<a href="../variables/_matter_main.protocol.TestCert_PAA_NoVID_PublicKey.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Test<wbr/>Cert_<wbr/>PAA_<wbr/>NoVID_<wbr/>Public<wbr/>Key</span></a>
+<a href="../variables/_matter_main.protocol.TestCert_PAA_NoVID_SKID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Test<wbr/>Cert_<wbr/>PAA_<wbr/>NoVID_<wbr/>SKID</span></a>
+<a href="../variables/_matter_main.protocol.TlvAttestation.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Attestation</span></a>
+<a href="../variables/_matter_main.protocol.TlvCaseSigma1.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Case<wbr/>Sigma1</span></a>
+<a href="../variables/_matter_main.protocol.TlvCaseSigma2.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Case<wbr/>Sigma2</span></a>
+<a href="../variables/_matter_main.protocol.TlvCaseSigma2Resume.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Case<wbr/>Sigma2<wbr/>Resume</span></a>
+<a href="../variables/_matter_main.protocol.TlvCaseSigma3.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Case<wbr/>Sigma3</span></a>
+<a href="../variables/_matter_main.protocol.TlvCertificationDeclaration.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Certification<wbr/>Declaration</span></a>
+<a href="../variables/_matter_main.protocol.TlvCertSigningRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Cert<wbr/>Signing<wbr/>Request</span></a>
+<a href="../variables/_matter_main.protocol.TlvEncryptedDataSigma2.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Encrypted<wbr/>Data<wbr/>Sigma2</span></a>
+<a href="../variables/_matter_main.protocol.TlvEncryptedDataSigma3.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Encrypted<wbr/>Data<wbr/>Sigma3</span></a>
+<a href="../variables/_matter_main.protocol.TlvIntermediateCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Intermediate<wbr/>Certificate</span></a>
+<a href="../variables/_matter_main.protocol.TlvOperationalCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Operational<wbr/>Certificate</span></a>
+<a href="../variables/_matter_main.protocol.TlvPasePake1.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Pase<wbr/>Pake1</span></a>
+<a href="../variables/_matter_main.protocol.TlvPasePake2.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Pase<wbr/>Pake2</span></a>
+<a href="../variables/_matter_main.protocol.TlvPasePake3.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Pase<wbr/>Pake3</span></a>
+<a href="../variables/_matter_main.protocol.TlvPbkdfParamRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Pbkdf<wbr/>Param<wbr/>Request</span></a>
+<a href="../variables/_matter_main.protocol.TlvPbkdfParamResponse.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Pbkdf<wbr/>Param<wbr/>Response</span></a>
+<a href="../variables/_matter_main.protocol.TlvRootCertificate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Root<wbr/>Certificate</span></a>
+<a href="../variables/_matter_main.protocol.TlvSecureChannelStatusMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Secure<wbr/>Channel<wbr/>Status<wbr/>Message</span></a>
+<a href="../variables/_matter_main.protocol.TlvSessionParameters.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Session<wbr/>Parameters</span></a>
+<a href="../variables/_matter_main.protocol.TlvSignedData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>Tlv<wbr/>Signed<wbr/>Data</span></a>
+<a href="../variables/_matter_main.protocol.UNICAST_UNSECURE_SESSION_ID.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-32"></use></svg><span>UNICAST_<wbr/>UNSECURE_<wbr/>SESSION_<wbr/>ID</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Functions</h3><div class="tsd-index-list"><a href="../functions/_matter_main.protocol.assertSecureSession.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>assert<wbr/>Secure<wbr/>Session</span></a>
+<a href="../functions/_matter_main.protocol.attributePathToId.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>attribute<wbr/>Path<wbr/>To<wbr/>Id</span></a>
+<a href="../functions/_matter_main.protocol.canAttributePayloadBeChunked.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>can<wbr/>Attribute<wbr/>Payload<wbr/>Be<wbr/>Chunked</span></a>
+<a href="../functions/_matter_main.protocol.chunkAttributePayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>chunk<wbr/>Attribute<wbr/>Payload</span></a>
+<a href="../functions/_matter_main.protocol.ClusterClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Cluster<wbr/>Client</span></a>
+<a href="../functions/_matter_main.protocol.clusterPathToId.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>cluster<wbr/>Path<wbr/>To<wbr/>Id</span></a>
+<a href="../functions/_matter_main.protocol.commandPathToId.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>command<wbr/>Path<wbr/>To<wbr/>Id</span></a>
+<a href="../functions/_matter_main.protocol.compressAttributeDataReportTags.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>compress<wbr/>Attribute<wbr/>Data<wbr/>Report<wbr/>Tags</span></a>
+<a href="../functions/_matter_main.protocol.createAttributeClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>create<wbr/>Attribute<wbr/>Client</span></a>
+<a href="../functions/_matter_main.protocol.createAttributeServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>create<wbr/>Attribute<wbr/>Server</span></a>
+<a href="../functions/_matter_main.protocol.createEventClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>create<wbr/>Event<wbr/>Client</span></a>
+<a href="../functions/_matter_main.protocol.createEventServer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>create<wbr/>Event<wbr/>Server</span></a>
+<a href="../functions/_matter_main.protocol.decodeAttributeValueWithSchema.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>decode<wbr/>Attribute<wbr/>Value<wbr/>With<wbr/>Schema</span></a>
+<a href="../functions/_matter_main.protocol.decodeListAttributeValueWithSchema.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>decode<wbr/>List<wbr/>Attribute<wbr/>Value<wbr/>With<wbr/>Schema</span></a>
+<a href="../functions/_matter_main.protocol.decodeUnknownAttributeValue.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>decode<wbr/>Unknown<wbr/>Attribute<wbr/>Value</span></a>
+<a href="../functions/_matter_main.protocol.decodeUnknownEventValue.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>decode<wbr/>Unknown<wbr/>Event<wbr/>Value</span></a>
+<a href="../functions/_matter_main.protocol.encodeAttributePayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>encode<wbr/>Attribute<wbr/>Payload</span></a>
+<a href="../functions/_matter_main.protocol.encodeEventPayload.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>encode<wbr/>Event<wbr/>Payload</span></a>
+<a href="../functions/_matter_main.protocol.eventPathToId.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>event<wbr/>Path<wbr/>To<wbr/>Id</span></a>
+<a href="../functions/_matter_main.protocol.expandPathsInAttributeData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>expand<wbr/>Paths<wbr/>In<wbr/>Attribute<wbr/>Data</span></a>
+<a href="../functions/_matter_main.protocol.FabricId_Matter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Fabric<wbr/>Id_<wbr/>Matter</span></a>
+<a href="../functions/_matter_main.protocol.FirmwareSigningId_Matter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Firmware<wbr/>Signing<wbr/>Id_<wbr/>Matter</span></a>
+<a href="../functions/_matter_main.protocol.genericElementPathToId.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>generic<wbr/>Element<wbr/>Path<wbr/>To<wbr/>Id</span></a>
+<a href="../functions/_matter_main.protocol.genericFabricScopedAttributeGetter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>generic<wbr/>Fabric<wbr/>Scoped<wbr/>Attribute<wbr/>Getter</span></a>
+<a href="../functions/_matter_main.protocol.genericFabricScopedAttributeGetterFromFabric.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>generic<wbr/>Fabric<wbr/>Scoped<wbr/>Attribute<wbr/>Getter<wbr/>From<wbr/>Fabric</span></a>
+<a href="../functions/_matter_main.protocol.genericFabricScopedAttributeSetter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>generic<wbr/>Fabric<wbr/>Scoped<wbr/>Attribute<wbr/>Setter</span></a>
+<a href="../functions/_matter_main.protocol.genericFabricScopedAttributeSetterForFabric.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>generic<wbr/>Fabric<wbr/>Scoped<wbr/>Attribute<wbr/>Setter<wbr/>For<wbr/>Fabric</span></a>
+<a href="../functions/_matter_main.protocol.getCommissioningModeQname.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>get<wbr/>Commissioning<wbr/>Mode<wbr/>Qname</span></a>
+<a href="../functions/_matter_main.protocol.getDeviceInstanceQname.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>get<wbr/>Device<wbr/>Instance<wbr/>Qname</span></a>
+<a href="../functions/_matter_main.protocol.getDeviceMatterQname.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>get<wbr/>Device<wbr/>Matter<wbr/>Qname</span></a>
+<a href="../functions/_matter_main.protocol.getDeviceTypeQname.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>get<wbr/>Device<wbr/>Type<wbr/>Qname</span></a>
+<a href="../functions/_matter_main.protocol.getFabricQname.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>get<wbr/>Fabric<wbr/>Qname</span></a>
+<a href="../functions/_matter_main.protocol.getLongDiscriminatorQname.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>get<wbr/>Long<wbr/>Discriminator<wbr/>Qname</span></a>
+<a href="../functions/_matter_main.protocol.getShortDiscriminatorQname.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>get<wbr/>Short<wbr/>Discriminator<wbr/>Qname</span></a>
+<a href="../functions/_matter_main.protocol.getVendorQname.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>get<wbr/>Vendor<wbr/>Qname</span></a>
+<a href="../functions/_matter_main.protocol.IcacId_Matter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Icac<wbr/>Id_<wbr/>Matter</span></a>
+<a href="../functions/_matter_main.protocol.jsToMatterDate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>js<wbr/>To<wbr/>Matter<wbr/>Date</span></a>
+<a href="../functions/_matter_main.protocol.logEndpoint.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>log<wbr/>Endpoint</span></a>
+<a href="../functions/_matter_main.protocol.matterToJsDate.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>matter<wbr/>To<wbr/>Js<wbr/>Date</span></a>
+<a href="../functions/_matter_main.protocol.NocCat_Matter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Noc<wbr/>Cat_<wbr/>Matter</span></a>
+<a href="../functions/_matter_main.protocol.NodeId_Matter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Node<wbr/>Id_<wbr/>Matter</span></a>
+<a href="../functions/_matter_main.protocol.normalizeAndDecodeAttributeData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>normalize<wbr/>And<wbr/>Decode<wbr/>Attribute<wbr/>Data</span></a>
+<a href="../functions/_matter_main.protocol.normalizeAndDecodeEventData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>normalize<wbr/>And<wbr/>Decode<wbr/>Event<wbr/>Data</span></a>
+<a href="../functions/_matter_main.protocol.normalizeAndDecodeReadAttributeReport.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>normalize<wbr/>And<wbr/>Decode<wbr/>Read<wbr/>Attribute<wbr/>Report</span></a>
+<a href="../functions/_matter_main.protocol.normalizeAndDecodeReadEventReport.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>normalize<wbr/>And<wbr/>Decode<wbr/>Read<wbr/>Event<wbr/>Report</span></a>
+<a href="../functions/_matter_main.protocol.normalizeAttributeData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>normalize<wbr/>Attribute<wbr/>Data</span></a>
+<a href="../functions/_matter_main.protocol.normalizeEventData.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>normalize<wbr/>Event<wbr/>Data</span></a>
+<a href="../functions/_matter_main.protocol.PeerAddress-1.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Peer<wbr/>Address</span></a>
+<a href="../functions/_matter_main.protocol.ProductId_Matter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Product<wbr/>Id_<wbr/>Matter</span></a>
+<a href="../functions/_matter_main.protocol.RcacId_Matter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Rcac<wbr/>Id_<wbr/>Matter</span></a>
+<a href="../functions/_matter_main.protocol.sortAttributeDataByPath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>sort<wbr/>Attribute<wbr/>Data<wbr/>By<wbr/>Path</span></a>
+<a href="../functions/_matter_main.protocol.structureReadAttributeDataToClusterObject.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>structure<wbr/>Read<wbr/>Attribute<wbr/>Data<wbr/>To<wbr/>Cluster<wbr/>Object</span></a>
+<a href="../functions/_matter_main.protocol.validateReadAttributesPath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>validate<wbr/>Read<wbr/>Attributes<wbr/>Path</span></a>
+<a href="../functions/_matter_main.protocol.validateReadEventPath.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>validate<wbr/>Read<wbr/>Event<wbr/>Path</span></a>
+<a href="../functions/_matter_main.protocol.VendorId_Matter.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-64"></use></svg><span>Vendor<wbr/>Id_<wbr/>Matter</span></a>
+</div></section></div></details></section></section><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-References"><h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg> References</h2></summary><section><section class="tsd-panel tsd-member"><a id="Base64" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Base64</span><a href="#Base64" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>Re-exports <a href="_matter_main.index.Base64.html">Base64</a></section><section class="tsd-panel tsd-member"><a id="DerCodec" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Der<wbr/>Codec</span><a href="#DerCodec" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>Re-exports <a href="../classes/_matter_main.index.DerCodec.html">DerCodec</a></section><section class="tsd-panel tsd-member"><a id="DerKey" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Der<wbr/>Key</span><a href="#DerKey" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>Re-exports <a href="../enums/_matter_main.index.DerKey.html">DerKey</a></section><section class="tsd-panel tsd-member"><a id="DerNode" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Der<wbr/>Node</span><a href="#DerNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>Re-exports <a href="../types/_matter_main.index.DerNode.html">DerNode</a></section><section class="tsd-panel tsd-member"><a id="DnsCodec" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>Dns<wbr/>Codec</span><a href="#DnsCodec" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>Re-exports <a href="../classes/_matter_main.index.DnsCodec.html">DnsCodec</a></section></section></details></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="tsd-otp-References"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>References</summary><div><a href="#Base64" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Base64</span></a><a href="#DerCodec" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Der<wbr/>Codec</span></a><a href="#DerKey" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Der<wbr/>Key</span></a><a href="#DerNode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Der<wbr/>Node</span></a><a href="#DnsCodec" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-4194304"></use></svg><span>Dns<wbr/>Codec</span></a></div></details></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1"></use></svg><span>matter.js-monorepo</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base=".."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@matter/node | matter.js-monorepo</title><meta name="description" content="Documentation for matter.js-monorepo"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #f6be46;
+    --md-sys-color-on-primary: #412d00;
+    --md-sys-color-primary-container: #5d4200;
+    --md-sys-color-on-primary-container: #ffdea3;
+    --md-sys-color-secondary: #d9c4a0;
+    --md-sys-color-on-secondary: #3b2f15;
+    --md-sys-color-secondary-container: #53452a;
+    --md-sys-color-on-secondary-container: #f6e0bb;
+    --md-sys-color-tertiary: #b2cfa8;
+    --md-sys-color-on-tertiary: #1e361a;
+    --md-sys-color-tertiary-container: #344d2f;
+    --md-sys-color-on-tertiary-container: #cdebc2;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #1e1b16;
+    --md-sys-color-on-background: #e9e1d9;
+    --md-sys-color-surface: #1e1b16;
+    --md-sys-color-on-surface: #e9e1d9;
+    --md-sys-color-surface-variant: #4e4639;
+    --md-sys-color-on-surface-variant: #d1c5b4;
+    --md-sys-color-outline: #9a8f80;
+    --md-sys-color-outline-variant: #4e4639;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e9e1d9;
+    --md-sys-color-inverse-on-surface: #34302a;
+    --md-sys-color-inverse-primary: #7a5900;
+    --md-sys-color-surface-dim: #16130e;
+    --md-sys-color-surface-bright: #3d3933;
+    --md-sys-color-surface-container-lowest: #110e09;
+    --md-sys-color-surface-container-low: #1e1b16;
+    --md-sys-color-surface-container: #221f1a;
+    --md-sys-color-surface-container-high: #2d2924;
+    --md-sys-color-surface-container-highest: #38342e
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #f6be46;
+  --md-sys-color-on-primary: #412d00;
+  --md-sys-color-primary-container: #5d4200;
+  --md-sys-color-on-primary-container: #ffdea3;
+  --md-sys-color-secondary: #d9c4a0;
+  --md-sys-color-on-secondary: #3b2f15;
+  --md-sys-color-secondary-container: #53452a;
+  --md-sys-color-on-secondary-container: #f6e0bb;
+  --md-sys-color-tertiary: #b2cfa8;
+  --md-sys-color-on-tertiary: #1e361a;
+  --md-sys-color-tertiary-container: #344d2f;
+  --md-sys-color-on-tertiary-container: #cdebc2;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #1e1b16;
+  --md-sys-color-on-background: #e9e1d9;
+  --md-sys-color-surface: #1e1b16;
+  --md-sys-color-on-surface: #e9e1d9;
+  --md-sys-color-surface-variant: #4e4639;
+  --md-sys-color-on-surface-variant: #d1c5b4;
+  --md-sys-color-outline: #9a8f80;
+  --md-sys-color-outline-variant: #4e4639;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e9e1d9;
+  --md-sys-color-inverse-on-surface: #34302a;
+  --md-sys-color-inverse-primary: #7a5900;
+  --md-sys-color-surface-dim: #16130e;
+  --md-sys-color-surface-bright: #3d3933;
+  --md-sys-color-surface-container-lowest: #110e09;
+  --md-sys-color-surface-container-low: #1e1b16;
+  --md-sys-color-surface-container: #221f1a;
+  --md-sys-color-surface-container-high: #2d2924;
+  --md-sys-color-surface-container-highest: #38342e
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #7a5900;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #ffdea3;
+    --md-sys-color-on-primary-container: #261900;
+    --md-sys-color-secondary: #6c5c3f;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #f6e0bb;
+    --md-sys-color-on-secondary-container: #251a04;
+    --md-sys-color-tertiary: #4b6545;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #cdebc2;
+    --md-sys-color-on-tertiary-container: #092007;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fffbff;
+    --md-sys-color-on-background: #1e1b16;
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #1e1b16;
+    --md-sys-color-surface-variant: #ede1cf;
+    --md-sys-color-on-surface-variant: #4e4639;
+    --md-sys-color-outline: #7f7667;
+    --md-sys-color-outline-variant: #d1c5b4;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #34302a;
+    --md-sys-color-inverse-on-surface: #f8efe7;
+    --md-sys-color-inverse-primary: #f6be46;
+    --md-sys-color-surface-dim: #e1d9d0;
+    --md-sys-color-surface-bright: #fff8f2;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fbf2e9;
+    --md-sys-color-surface-container: #f5ede4;
+    --md-sys-color-surface-container-high: #efe7de;
+    --md-sys-color-surface-container-highest: #e9e1d9
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #7a5900;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #ffdea3;
+  --md-sys-color-on-primary-container: #261900;
+  --md-sys-color-secondary: #6c5c3f;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f6e0bb;
+  --md-sys-color-on-secondary-container: #251a04;
+  --md-sys-color-tertiary: #4b6545;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #cdebc2;
+  --md-sys-color-on-tertiary-container: #092007;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fffbff;
+  --md-sys-color-on-background: #1e1b16;
+  --md-sys-color-surface: #fffbff;
+  --md-sys-color-on-surface: #1e1b16;
+  --md-sys-color-surface-variant: #ede1cf;
+  --md-sys-color-on-surface-variant: #4e4639;
+  --md-sys-color-outline: #7f7667;
+  --md-sys-color-outline-variant: #d1c5b4;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #34302a;
+  --md-sys-color-inverse-on-surface: #f8efe7;
+  --md-sys-color-inverse-primary: #f6be46;
+  --md-sys-color-surface-dim: #e1d9d0;
+  --md-sys-color-surface-bright: #fff8f2;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #fbf2e9;
+  --md-sys-color-surface-container: #f5ede4;
+  --md-sys-color-surface-container-high: #efe7de;
+  --md-sys-color-surface-container-highest: #e9e1d9
+}
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base=".."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">matter.js-monorepo</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb"><li><a href="../modules.html">matter.js-monorepo</a></li><li><a href="_matter_node.html">@matter/node</a></li></ul><h1>Module @matter/node</h1></div><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><h3 class="tsd-index-heading uppercase">Index</h3><section class="tsd-index-section"><h3 class="tsd-index-heading">Modules</h3><div class="tsd-index-list"><a href="_matter_node._.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>.</span></a>
+<a href="_matter_node.behaviors.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors</span></a>
+<a href="_matter_node.behaviors_access_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/access-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_account_login.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/account-<wbr/>login</span></a>
+<a href="_matter_node.behaviors_actions.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/actions</span></a>
+<a href="_matter_node.behaviors_activated_carbon_filter_monitoring.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/activated-<wbr/>carbon-<wbr/>filter-<wbr/>monitoring</span></a>
+<a href="_matter_node.behaviors_administrator_commissioning.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/administrator-<wbr/>commissioning</span></a>
+<a href="_matter_node.behaviors_air_quality.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/air-<wbr/>quality</span></a>
+<a href="_matter_node.behaviors_alarm_base.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/alarm-<wbr/>base</span></a>
+<a href="_matter_node.behaviors_application_basic.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/application-<wbr/>basic</span></a>
+<a href="_matter_node.behaviors_application_launcher.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/application-<wbr/>launcher</span></a>
+<a href="_matter_node.behaviors_audio_output.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/audio-<wbr/>output</span></a>
+<a href="_matter_node.behaviors_ballast_configuration.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/ballast-<wbr/>configuration</span></a>
+<a href="_matter_node.behaviors_basic_information.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/basic-<wbr/>information</span></a>
+<a href="_matter_node.behaviors_binding.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/binding</span></a>
+<a href="_matter_node.behaviors_boolean_state.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/boolean-<wbr/>state</span></a>
+<a href="_matter_node.behaviors_boolean_state_configuration.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/boolean-<wbr/>state-<wbr/>configuration</span></a>
+<a href="_matter_node.behaviors_bridged_device_basic_information.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/bridged-<wbr/>device-<wbr/>basic-<wbr/>information</span></a>
+<a href="_matter_node.behaviors_carbon_dioxide_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/carbon-<wbr/>dioxide-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_carbon_monoxide_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/carbon-<wbr/>monoxide-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_channel.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/channel</span></a>
+<a href="_matter_node.behaviors_color_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/color-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_content_app_observer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/content-<wbr/>app-<wbr/>observer</span></a>
+<a href="_matter_node.behaviors_content_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/content-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_content_launcher.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/content-<wbr/>launcher</span></a>
+<a href="_matter_node.behaviors_descriptor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/descriptor</span></a>
+<a href="_matter_node.behaviors_device_energy_management.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/device-<wbr/>energy-<wbr/>management</span></a>
+<a href="_matter_node.behaviors_device_energy_management_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/device-<wbr/>energy-<wbr/>management-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_diagnostic_logs.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/diagnostic-<wbr/>logs</span></a>
+<a href="_matter_node.behaviors_dishwasher_alarm.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/dishwasher-<wbr/>alarm</span></a>
+<a href="_matter_node.behaviors_dishwasher_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/dishwasher-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_door_lock.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/door-<wbr/>lock</span></a>
+<a href="_matter_node.behaviors_electrical_energy_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/electrical-<wbr/>energy-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_electrical_power_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/electrical-<wbr/>power-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_energy_evse.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/energy-<wbr/>evse</span></a>
+<a href="_matter_node.behaviors_energy_evse_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/energy-<wbr/>evse-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_energy_preference.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/energy-<wbr/>preference</span></a>
+<a href="_matter_node.behaviors_ethernet_network_diagnostics.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/ethernet-<wbr/>network-<wbr/>diagnostics</span></a>
+<a href="_matter_node.behaviors_fan_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/fan-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_fixed_label.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/fixed-<wbr/>label</span></a>
+<a href="_matter_node.behaviors_flow_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/flow-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_formaldehyde_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/formaldehyde-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_general_commissioning.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/general-<wbr/>commissioning</span></a>
+<a href="_matter_node.behaviors_general_diagnostics.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/general-<wbr/>diagnostics</span></a>
+<a href="_matter_node.behaviors_group_key_management.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/group-<wbr/>key-<wbr/>management</span></a>
+<a href="_matter_node.behaviors_groups.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/groups</span></a>
+<a href="_matter_node.behaviors_hepa_filter_monitoring.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/hepa-<wbr/>filter-<wbr/>monitoring</span></a>
+<a href="_matter_node.behaviors_icd_management.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/icd-<wbr/>management</span></a>
+<a href="_matter_node.behaviors_identify.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/identify</span></a>
+<a href="_matter_node.behaviors_illuminance_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/illuminance-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_keypad_input.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/keypad-<wbr/>input</span></a>
+<a href="_matter_node.behaviors_label.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/label</span></a>
+<a href="_matter_node.behaviors_laundry_dryer_controls.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/laundry-<wbr/>dryer-<wbr/>controls</span></a>
+<a href="_matter_node.behaviors_laundry_washer_controls.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/laundry-<wbr/>washer-<wbr/>controls</span></a>
+<a href="_matter_node.behaviors_laundry_washer_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/laundry-<wbr/>washer-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_level_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/level-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_localization_configuration.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/localization-<wbr/>configuration</span></a>
+<a href="_matter_node.behaviors_low_power.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/low-<wbr/>power</span></a>
+<a href="_matter_node.behaviors_media_input.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/media-<wbr/>input</span></a>
+<a href="_matter_node.behaviors_media_playback.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/media-<wbr/>playback</span></a>
+<a href="_matter_node.behaviors_messages.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/messages</span></a>
+<a href="_matter_node.behaviors_microwave_oven_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/microwave-<wbr/>oven-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_microwave_oven_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/microwave-<wbr/>oven-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_mode_base.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/mode-<wbr/>base</span></a>
+<a href="_matter_node.behaviors_mode_select.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/mode-<wbr/>select</span></a>
+<a href="_matter_node.behaviors_network_commissioning.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/network-<wbr/>commissioning</span></a>
+<a href="_matter_node.behaviors_nitrogen_dioxide_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/nitrogen-<wbr/>dioxide-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_occupancy_sensing.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/occupancy-<wbr/>sensing</span></a>
+<a href="_matter_node.behaviors_on_off.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/on-<wbr/>off</span></a>
+<a href="_matter_node.behaviors_operational_credentials.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/operational-<wbr/>credentials</span></a>
+<a href="_matter_node.behaviors_operational_state.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/operational-<wbr/>state</span></a>
+<a href="_matter_node.behaviors_ota_software_update_provider.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/ota-<wbr/>software-<wbr/>update-<wbr/>provider</span></a>
+<a href="_matter_node.behaviors_ota_software_update_requestor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/ota-<wbr/>software-<wbr/>update-<wbr/>requestor</span></a>
+<a href="_matter_node.behaviors_oven_cavity_operational_state.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/oven-<wbr/>cavity-<wbr/>operational-<wbr/>state</span></a>
+<a href="_matter_node.behaviors_oven_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/oven-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_ozone_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/ozone-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_pm1_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/pm1-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_pm10_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/pm10-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_pm25_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/pm25-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_power_source.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/power-<wbr/>source</span></a>
+<a href="_matter_node.behaviors_power_source_configuration.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/power-<wbr/>source-<wbr/>configuration</span></a>
+<a href="_matter_node.behaviors_power_topology.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/power-<wbr/>topology</span></a>
+<a href="_matter_node.behaviors_pressure_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/pressure-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_proxy_configuration.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/proxy-<wbr/>configuration</span></a>
+<a href="_matter_node.behaviors_proxy_discovery.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/proxy-<wbr/>discovery</span></a>
+<a href="_matter_node.behaviors_pulse_width_modulation.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/pulse-<wbr/>width-<wbr/>modulation</span></a>
+<a href="_matter_node.behaviors_pump_configuration_and_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/pump-<wbr/>configuration-<wbr/>and-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_radon_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/radon-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_refrigerator_alarm.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/refrigerator-<wbr/>alarm</span></a>
+<a href="_matter_node.behaviors_refrigerator_and_temperature_controlled_cabinet_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/refrigerator-<wbr/>and-<wbr/>temperature-<wbr/>controlled-<wbr/>cabinet-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_relative_humidity_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/relative-<wbr/>humidity-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_resource_monitoring.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/resource-<wbr/>monitoring</span></a>
+<a href="_matter_node.behaviors_rvc_clean_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/rvc-<wbr/>clean-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_rvc_operational_state.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/rvc-<wbr/>operational-<wbr/>state</span></a>
+<a href="_matter_node.behaviors_rvc_run_mode.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/rvc-<wbr/>run-<wbr/>mode</span></a>
+<a href="_matter_node.behaviors_scenes_management.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/scenes-<wbr/>management</span></a>
+<a href="_matter_node.behaviors_smoke_co_alarm.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/smoke-<wbr/>co-<wbr/>alarm</span></a>
+<a href="_matter_node.behaviors_software_diagnostics.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/software-<wbr/>diagnostics</span></a>
+<a href="_matter_node.behaviors_switch.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/switch</span></a>
+<a href="_matter_node.behaviors_target_navigator.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/target-<wbr/>navigator</span></a>
+<a href="_matter_node.behaviors_temperature_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/temperature-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_temperature_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/temperature-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_thermostat.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/thermostat</span></a>
+<a href="_matter_node.behaviors_thermostat_user_interface_configuration.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/thermostat-<wbr/>user-<wbr/>interface-<wbr/>configuration</span></a>
+<a href="_matter_node.behaviors_thread_network_diagnostics.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/thread-<wbr/>network-<wbr/>diagnostics</span></a>
+<a href="_matter_node.behaviors_time_format_localization.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/time-<wbr/>format-<wbr/>localization</span></a>
+<a href="_matter_node.behaviors_time_synchronization.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/time-<wbr/>synchronization</span></a>
+<a href="_matter_node.behaviors_total_volatile_organic_compounds_concentration_measurement.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/total-<wbr/>volatile-<wbr/>organic-<wbr/>compounds-<wbr/>concentration-<wbr/>measurement</span></a>
+<a href="_matter_node.behaviors_unit_localization.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/unit-<wbr/>localization</span></a>
+<a href="_matter_node.behaviors_user_label.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/user-<wbr/>label</span></a>
+<a href="_matter_node.behaviors_valid_proxies.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/valid-<wbr/>proxies</span></a>
+<a href="_matter_node.behaviors_valve_configuration_and_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/valve-<wbr/>configuration-<wbr/>and-<wbr/>control</span></a>
+<a href="_matter_node.behaviors_wake_on_lan.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/wake-<wbr/>on-<wbr/>lan</span></a>
+<a href="_matter_node.behaviors_wi_fi_network_diagnostics.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/wi-<wbr/>fi-<wbr/>network-<wbr/>diagnostics</span></a>
+<a href="_matter_node.behaviors_window_covering.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>behaviors/window-<wbr/>covering</span></a>
+<a href="_matter_node.devices_air_purifier.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/air-<wbr/>purifier</span></a>
+<a href="_matter_node.devices_air_quality_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/air-<wbr/>quality-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_basic_video_player.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/basic-<wbr/>video-<wbr/>player</span></a>
+<a href="_matter_node.devices_casting_video_client.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/casting-<wbr/>video-<wbr/>client</span></a>
+<a href="_matter_node.devices_casting_video_player.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/casting-<wbr/>video-<wbr/>player</span></a>
+<a href="_matter_node.devices_color_dimmer_switch.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/color-<wbr/>dimmer-<wbr/>switch</span></a>
+<a href="_matter_node.devices_color_temperature_light.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/color-<wbr/>temperature-<wbr/>light</span></a>
+<a href="_matter_node.devices_contact_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/contact-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_content_app.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/content-<wbr/>app</span></a>
+<a href="_matter_node.devices_control_bridge.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/control-<wbr/>bridge</span></a>
+<a href="_matter_node.devices_cook_surface.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/cook-<wbr/>surface</span></a>
+<a href="_matter_node.devices_cooktop.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/cooktop</span></a>
+<a href="_matter_node.devices_dimmable_light.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/dimmable-<wbr/>light</span></a>
+<a href="_matter_node.devices_dimmable_plug_in_unit.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/dimmable-<wbr/>plug-<wbr/>in-<wbr/>unit</span></a>
+<a href="_matter_node.devices_dimmer_switch.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/dimmer-<wbr/>switch</span></a>
+<a href="_matter_node.devices_dishwasher.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/dishwasher</span></a>
+<a href="_matter_node.devices_door_lock.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/door-<wbr/>lock</span></a>
+<a href="_matter_node.devices_door_lock_controller.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/door-<wbr/>lock-<wbr/>controller</span></a>
+<a href="_matter_node.devices_extended_color_light.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/extended-<wbr/>color-<wbr/>light</span></a>
+<a href="_matter_node.devices_extractor_hood.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/extractor-<wbr/>hood</span></a>
+<a href="_matter_node.devices_fan.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/fan</span></a>
+<a href="_matter_node.devices_flow_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/flow-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_generic_switch.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/generic-<wbr/>switch</span></a>
+<a href="_matter_node.devices_humidity_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/humidity-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_index.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/index</span></a>
+<a href="_matter_node.devices_laundry_dryer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/laundry-<wbr/>dryer</span></a>
+<a href="_matter_node.devices_laundry_washer.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/laundry-<wbr/>washer</span></a>
+<a href="_matter_node.devices_light_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/light-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_microwave_oven.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/microwave-<wbr/>oven</span></a>
+<a href="_matter_node.devices_mode_select.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/mode-<wbr/>select</span></a>
+<a href="_matter_node.devices_occupancy_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/occupancy-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_on_off_light.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/on-<wbr/>off-<wbr/>light</span></a>
+<a href="_matter_node.devices_on_off_light_switch.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/on-<wbr/>off-<wbr/>light-<wbr/>switch</span></a>
+<a href="_matter_node.devices_on_off_plug_in_unit.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/on-<wbr/>off-<wbr/>plug-<wbr/>in-<wbr/>unit</span></a>
+<a href="_matter_node.devices_on_off_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/on-<wbr/>off-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_oven.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/oven</span></a>
+<a href="_matter_node.devices_pressure_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/pressure-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_pump.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/pump</span></a>
+<a href="_matter_node.devices_pump_controller.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/pump-<wbr/>controller</span></a>
+<a href="_matter_node.devices_rain_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/rain-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_refrigerator.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/refrigerator</span></a>
+<a href="_matter_node.devices_robotic_vacuum_cleaner.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/robotic-<wbr/>vacuum-<wbr/>cleaner</span></a>
+<a href="_matter_node.devices_room_air_conditioner.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/room-<wbr/>air-<wbr/>conditioner</span></a>
+<a href="_matter_node.devices_smoke_co_alarm.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/smoke-<wbr/>co-<wbr/>alarm</span></a>
+<a href="_matter_node.devices_speaker.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/speaker</span></a>
+<a href="_matter_node.devices_temperature_controlled_cabinet.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/temperature-<wbr/>controlled-<wbr/>cabinet</span></a>
+<a href="_matter_node.devices_temperature_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/temperature-<wbr/>sensor</span></a>
+<a href="_matter_node.devices_thermostat.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/thermostat</span></a>
+<a href="_matter_node.devices_video_remote_control.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/video-<wbr/>remote-<wbr/>control</span></a>
+<a href="_matter_node.devices_water_freeze_detector.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/water-<wbr/>freeze-<wbr/>detector</span></a>
+<a href="_matter_node.devices_water_leak_detector.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/water-<wbr/>leak-<wbr/>detector</span></a>
+<a href="_matter_node.devices_water_valve.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/water-<wbr/>valve</span></a>
+<a href="_matter_node.devices_window_covering.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/window-<wbr/>covering</span></a>
+<a href="_matter_node.devices_window_covering_controller.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>devices/window-<wbr/>covering-<wbr/>controller</span></a>
+<a href="_matter_node.endpoints_aggregator.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/aggregator</span></a>
+<a href="_matter_node.endpoints_base.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/base</span></a>
+<a href="_matter_node.endpoints_bridged_node.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/bridged-<wbr/>node</span></a>
+<a href="_matter_node.endpoints_device_energy_management.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/device-<wbr/>energy-<wbr/>management</span></a>
+<a href="_matter_node.endpoints_electrical_sensor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/electrical-<wbr/>sensor</span></a>
+<a href="_matter_node.endpoints_index.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/index</span></a>
+<a href="_matter_node.endpoints_ota_provider.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/ota-<wbr/>provider</span></a>
+<a href="_matter_node.endpoints_ota_requestor.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/ota-<wbr/>requestor</span></a>
+<a href="_matter_node.endpoints_power_source.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/power-<wbr/>source</span></a>
+<a href="_matter_node.endpoints_root.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>endpoints/root</span></a>
+<a href="_matter_node.load.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2"></use></svg><span>load</span></a>
+</div></section></section></section></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div></div><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1"></use></svg><span>matter.js-monorepo</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base=".."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>

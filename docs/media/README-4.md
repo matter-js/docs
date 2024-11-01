@@ -1,15 +1,15 @@
-# matter.js Node Shell
-
-STATUS: Work In Progress (WIP)
+# @matter/nodejs-shell - matter.js Node Shell
 
 This project provides a light-weight node.js implementation of a Matter shell application like the chip-tool from the official Matter-SDK.
+
+> This package supports all Node.js LTS versions starting with 18.x
 
 ## Install
 
 If you want to install just the shell app then you can do so by running:
 
 ```
-npm install @project-chip/matter-node-shell.js
+npm install @matter/nodejs-shell
 ```
 
 ## Run
@@ -22,6 +22,22 @@ npm shell <nodenum>
 ```
 
 There are other parameters available to enable BLE and define the HCI device to use. See `npm shell -- --help` for more details.
+Please note the extra `--` to separate the npm parameters from the shell parameters!
+
+## matter.js v0.11 Storage adjustment!
+In matter.js 0.11 we adjusted the storage to the new environment based one. This means that by default the storage is in the user directory in .matter/shell-XX where XX is the nodeBum you provided as parameter. You can adjust the storage base location with "--storage-path=..." as parameter.
+
+To use a former storage you can use "--legacyStorage" and the storage will be in the .matter-shell-XX directory in the local directory as before.
+To manually convert a storage you can follow the following steps. The described steps assume ./.matter-shell-XX is the old storage and ~/.matter/shell-XX is the new storage location.
+
+* Stop the shell
+* Copy ./.matter-shell-XX/0.RootCertificateManager.* to ~/.matter/shell-XX/credentials.*
+* Copy ./.matter-shell-XX/0.MatterController.fabric to ~/.matter/shell-XX/credentials.fabric
+* Copy ./.matter-shell-XX/0.MatterController.commissionedNodes to ~/.matter/shell-XX/nodes.commissionedNodes
+* Copy ./.matter-shell-XX/0.SessionManager.* to ~/.matter/shell-XX/sessions.*
+* Copy ./.matter-shell-XX/Node.* to ~/.matter/shell-XX/Node.*
+
+All "0.MatterController.node-*" files from the old storage are not needed to be copied, if existing. They are automatically regenerated on next start.
 
 ## General usage
 
@@ -45,6 +61,7 @@ matter-node> help
   attributes                               Read and Write attributes
   events                                   Read events
   commands                                 Invoke commands
+  tlv                                      TLV decoding tools
   exit                                     Exit
 ```
 
@@ -115,6 +132,7 @@ To unpair a node use `commission unpair <node-id>`. This will remove the node fr
 The shell supports reading and writing attributes (top level command `attributes` or `a` as alias), reading events (`events`/`e`) and invoking commands (`commands`/`c`) on the node. Below these top level commands the full list of the officially defined clusters is available to be used. See the help for the relevant cluster for more details.
 
 For reading attributes also a bulk read for all attributes is supported and with the `by-id` variant you can read and attribute from any cluster including custom clusters.
+Attribute reads are done locally (when connected with a subscription and attribute is subscribable) by default. For remote reads (always from the node) add the `--remote` parameter. Unknown attributes or attributes from unknown clusters are always read remotely.
 
 Writing attributes and executing commands (when the request requires data) these can be provided as JSON when it is no simple type. The shell will try to parse the JSON and send the data to the node. Binary data and Numbers >56bit needs to be provided as strings in this JSON and are automatically converted.
 For convenience reasons any number in the value to write or invoke data can be provided as hex string by prefixing it with `0x` (e.g. `"0x1234"`) and is then also converted automatically.
@@ -122,7 +140,8 @@ When sending complex JSON content ideally use single quotes around the json beca
 
 Some examples:
 
--   `attributes basicinformation read all 5000 0` reads all attributes from the Basic Information cluster from node 5000 endpoint 0
+-   `attributes basicinformation read all 5000 0` reads all attributes from the Basic Information cluster from node 5000 endpoint 0 (reads values locally when connected with subscription, else remote)
+-   `attributes basicinformation read all 5000 0 --remote` reads all attributes from the Basic Information cluster from node 5000 endpoint 0 always from remote (also when connected with a subscription)
 -   `attributes basicinformation read nodelabel 5000 0` reads the attribute "nodelabel" from the Basic Information cluster from node 5000 endpoint 0
 -   `attributes basicinformation read 0x5 5000 0` reads the attribute "nodelabel" (aliased with it's hex attribute id) from the Basic Information cluster from node 5000 endpoint 0
 -   `attributes by-id 0x28 read 0x5 5000 0` also reads the attribute "nodelabel" from the Basic Information cluster from node 5000 endpoint 0, but as generic read from the cluster with id 0x28 (also the decimal value 40 can be used)

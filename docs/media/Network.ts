@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { MatterError, NoProviderError } from "../common/MatterError.js";
+import { MatterError, NoProviderError } from "../MatterError.js";
 import { MaybePromise } from "../util/Promises.js";
 import { UdpChannel, UdpChannelOptions } from "./UdpChannel.js";
 

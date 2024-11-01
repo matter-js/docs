@@ -1,0 +1,250 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>State | matter.js-monorepo</title><meta name="description" content="Documentation for matter.js-monorepo"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #f6be46;
+    --md-sys-color-on-primary: #412d00;
+    --md-sys-color-primary-container: #5d4200;
+    --md-sys-color-on-primary-container: #ffdea3;
+    --md-sys-color-secondary: #d9c4a0;
+    --md-sys-color-on-secondary: #3b2f15;
+    --md-sys-color-secondary-container: #53452a;
+    --md-sys-color-on-secondary-container: #f6e0bb;
+    --md-sys-color-tertiary: #b2cfa8;
+    --md-sys-color-on-tertiary: #1e361a;
+    --md-sys-color-tertiary-container: #344d2f;
+    --md-sys-color-on-tertiary-container: #cdebc2;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #1e1b16;
+    --md-sys-color-on-background: #e9e1d9;
+    --md-sys-color-surface: #1e1b16;
+    --md-sys-color-on-surface: #e9e1d9;
+    --md-sys-color-surface-variant: #4e4639;
+    --md-sys-color-on-surface-variant: #d1c5b4;
+    --md-sys-color-outline: #9a8f80;
+    --md-sys-color-outline-variant: #4e4639;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e9e1d9;
+    --md-sys-color-inverse-on-surface: #34302a;
+    --md-sys-color-inverse-primary: #7a5900;
+    --md-sys-color-surface-dim: #16130e;
+    --md-sys-color-surface-bright: #3d3933;
+    --md-sys-color-surface-container-lowest: #110e09;
+    --md-sys-color-surface-container-low: #1e1b16;
+    --md-sys-color-surface-container: #221f1a;
+    --md-sys-color-surface-container-high: #2d2924;
+    --md-sys-color-surface-container-highest: #38342e
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #f6be46;
+  --md-sys-color-on-primary: #412d00;
+  --md-sys-color-primary-container: #5d4200;
+  --md-sys-color-on-primary-container: #ffdea3;
+  --md-sys-color-secondary: #d9c4a0;
+  --md-sys-color-on-secondary: #3b2f15;
+  --md-sys-color-secondary-container: #53452a;
+  --md-sys-color-on-secondary-container: #f6e0bb;
+  --md-sys-color-tertiary: #b2cfa8;
+  --md-sys-color-on-tertiary: #1e361a;
+  --md-sys-color-tertiary-container: #344d2f;
+  --md-sys-color-on-tertiary-container: #cdebc2;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #1e1b16;
+  --md-sys-color-on-background: #e9e1d9;
+  --md-sys-color-surface: #1e1b16;
+  --md-sys-color-on-surface: #e9e1d9;
+  --md-sys-color-surface-variant: #4e4639;
+  --md-sys-color-on-surface-variant: #d1c5b4;
+  --md-sys-color-outline: #9a8f80;
+  --md-sys-color-outline-variant: #4e4639;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e9e1d9;
+  --md-sys-color-inverse-on-surface: #34302a;
+  --md-sys-color-inverse-primary: #7a5900;
+  --md-sys-color-surface-dim: #16130e;
+  --md-sys-color-surface-bright: #3d3933;
+  --md-sys-color-surface-container-lowest: #110e09;
+  --md-sys-color-surface-container-low: #1e1b16;
+  --md-sys-color-surface-container: #221f1a;
+  --md-sys-color-surface-container-high: #2d2924;
+  --md-sys-color-surface-container-highest: #38342e
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #7a5900;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #ffdea3;
+    --md-sys-color-on-primary-container: #261900;
+    --md-sys-color-secondary: #6c5c3f;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #f6e0bb;
+    --md-sys-color-on-secondary-container: #251a04;
+    --md-sys-color-tertiary: #4b6545;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #cdebc2;
+    --md-sys-color-on-tertiary-container: #092007;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fffbff;
+    --md-sys-color-on-background: #1e1b16;
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #1e1b16;
+    --md-sys-color-surface-variant: #ede1cf;
+    --md-sys-color-on-surface-variant: #4e4639;
+    --md-sys-color-outline: #7f7667;
+    --md-sys-color-outline-variant: #d1c5b4;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #34302a;
+    --md-sys-color-inverse-on-surface: #f8efe7;
+    --md-sys-color-inverse-primary: #f6be46;
+    --md-sys-color-surface-dim: #e1d9d0;
+    --md-sys-color-surface-bright: #fff8f2;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fbf2e9;
+    --md-sys-color-surface-container: #f5ede4;
+    --md-sys-color-surface-container-high: #efe7de;
+    --md-sys-color-surface-container-highest: #e9e1d9
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #7a5900;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #ffdea3;
+  --md-sys-color-on-primary-container: #261900;
+  --md-sys-color-secondary: #6c5c3f;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f6e0bb;
+  --md-sys-color-on-secondary-container: #251a04;
+  --md-sys-color-tertiary: #4b6545;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #cdebc2;
+  --md-sys-color-on-tertiary-container: #092007;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fffbff;
+  --md-sys-color-on-background: #1e1b16;
+  --md-sys-color-surface: #fffbff;
+  --md-sys-color-on-surface: #1e1b16;
+  --md-sys-color-surface-variant: #ede1cf;
+  --md-sys-color-on-surface-variant: #4e4639;
+  --md-sys-color-outline: #7f7667;
+  --md-sys-color-outline-variant: #d1c5b4;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #34302a;
+  --md-sys-color-inverse-on-surface: #f8efe7;
+  --md-sys-color-inverse-primary: #f6be46;
+  --md-sys-color-surface-dim: #e1d9d0;
+  --md-sys-color-surface-bright: #fff8f2;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #fbf2e9;
+  --md-sys-color-surface-container: #f5ede4;
+  --md-sys-color-surface-container-high: #efe7de;
+  --md-sys-color-surface-container-highest: #e9e1d9
+}
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base=".."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">matter.js-monorepo</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb"><li><a href="../modules.html">matter.js-monorepo</a></li><li><a href="../modules/_matter_node.html">@matter/node</a></li><li><a href="../modules/_matter_node.behaviors.html">behaviors</a></li><li><a href="_matter_node.behaviors.EnergyEvseBehavior.html">EnergyEvseBehavior</a></li><li><a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html">State</a></li></ul><h1>Interface State</h1></div><div class="tsd-signature"><span class="tsd-signature-keyword">interface </span><span class="tsd-kind-interface">State</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#chargingEnabledUntil">chargingEnabledUntil</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#circuitCapacity">circuitCapacity</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#faultState">faultState</a><span class="tsd-signature-symbol">: </span><a href="../modules/_matter_types.clusters_energy_evse.EnergyEvse.html" class="tsd-signature-type tsd-kind-namespace">EnergyEvse</a><span class="tsd-signature-symbol">.</span><a href="../enums/_matter_types.clusters_energy_evse.EnergyEvse.FaultState.html" class="tsd-signature-type tsd-kind-enum">FaultState</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#maximumChargeCurrent">maximumChargeCurrent</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#minimumChargeCurrent">minimumChargeCurrent</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#randomizationDelayWindow">randomizationDelayWindow</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#sessionDuration">sessionDuration</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#sessionEnergyCharged">sessionEnergyCharged</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#sessionId">sessionId</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#state">state</a><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_matter_types.clusters_energy_evse.EnergyEvse.html" class="tsd-signature-type tsd-kind-namespace">EnergyEvse</a><span class="tsd-signature-symbol">.</span><a href="../enums/_matter_types.clusters_energy_evse.EnergyEvse.State.html" class="tsd-signature-type tsd-kind-enum">State</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#supplyState">supplyState</a><span class="tsd-signature-symbol">: </span><a href="../modules/_matter_types.clusters_energy_evse.EnergyEvse.html" class="tsd-signature-type tsd-kind-namespace">EnergyEvse</a><span class="tsd-signature-symbol">.</span><a href="../enums/_matter_types.clusters_energy_evse.EnergyEvse.SupplyState.html" class="tsd-signature-type tsd-kind-enum">SupplyState</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><a class="tsd-kind-property" href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#userMaximumChargeCurrent">userMaximumChargeCurrent</a><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div><section class="tsd-panel tsd-hierarchy"><h4>Hierarchy</h4><ul class="tsd-hierarchy"><li><span class="tsd-signature-type">StateType</span><ul class="tsd-hierarchy"><li><span class="target">State</span></li></ul></li></ul></section><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/lauckhart/matter.js/blob/fea54aba9b34bc23041aa37c7fff8438025dd60c/packages/node/src/behaviors/energy-evse/EnergyEvseBehavior.ts#L26">packages/node/src/behaviors/energy-evse/EnergyEvseBehavior.ts:26</a></li></ul></aside><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex="0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-chevronSmall"></use></svg> Index</h5></summary><div class="tsd-accordion-details"><section class="tsd-index-section"><h3 class="tsd-index-heading">Properties</h3><div class="tsd-index-list"><a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#chargingEnabledUntil" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>charging<wbr/>Enabled<wbr/>Until</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#circuitCapacity" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>circuit<wbr/>Capacity</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#faultState" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>fault<wbr/>State</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#maximumChargeCurrent" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>maximum<wbr/>Charge<wbr/>Current</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#minimumChargeCurrent" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>minimum<wbr/>Charge<wbr/>Current</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#randomizationDelayWindow" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>randomization<wbr/>Delay<wbr/>Window?</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#sessionDuration" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>session<wbr/>Duration</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#sessionEnergyCharged" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>session<wbr/>Energy<wbr/>Charged</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#sessionId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>session<wbr/>Id</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#state" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>state</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#supplyState" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>supply<wbr/>State</span></a>
+<a href="_matter_node.behaviors.EnergyEvseBehavior.State-1.html#userMaximumChargeCurrent" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>user<wbr/>Maximum<wbr/>Charge<wbr/>Current?</span></a>
+</div></section></div></details></section></section><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg> Properties</h2></summary><section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="chargingEnabledUntil" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>charging<wbr/>Enabled<wbr/>Until</span><a href="#chargingEnabledUntil" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">charging<wbr/>Enabled<wbr/>Until</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><p>Indicates the time, in UTC, that the EVSE will automatically stop current flow to the EV.</p>
+<p>A null value indicates the EVSE is always enabled for charging.</p>
+<p>A value in the past or 0x0 indicates that EVSE charging shall be disabled. The attribute is only set via
+the payload of the EnableCharging command.</p>
+<p>This attribute shall be persisted, for example a temporary power failure should not stop the vehicle
+from being charged.</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See" class="tsd-anchor"></a>See<a href="#See" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.4</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.chargingEnabledUntil</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2544</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="circuitCapacity" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>circuit<wbr/>Capacity</span><a href="#circuitCapacity" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">circuit<wbr/>Capacity</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>Indicates the capacity that the circuit that the EVSE is connected to can provide. It is intended to
+allow implementation of a self-managed network of EVSEs. It is assumed that the device will allow the
+setting of such values by an installer.</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-1" class="tsd-anchor"></a>See<a href="#See-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.6</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.circuitCapacity</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2552</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="faultState" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>fault<wbr/>State</span><a href="#faultState" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">fault<wbr/>State</span><span class="tsd-signature-symbol">:</span> <a href="../modules/_matter_types.clusters_energy_evse.EnergyEvse.html" class="tsd-signature-type tsd-kind-namespace">EnergyEvse</a><span class="tsd-signature-symbol">.</span><a href="../enums/_matter_types.clusters_energy_evse.EnergyEvse.FaultState.html" class="tsd-signature-type tsd-kind-enum">FaultState</a></div><div class="tsd-comment tsd-typography"><p>Indicates the type of fault detected by the EVSE (internally or as detected in the pilot signal).</p>
+<p>When the SupplyState attribute is DisabledError, the FaultState attribute will be one of the values
+listed in FaultStateEnum, except NoError. For all values of SupplyState other than DisabledError, the
+FaultState attribute shall be NoError.</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-2" class="tsd-anchor"></a>See<a href="#See-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.3</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.faultState</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2530</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="maximumChargeCurrent" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>maximum<wbr/>Charge<wbr/>Current</span><a href="#maximumChargeCurrent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">maximum<wbr/>Charge<wbr/>Current</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>Indicates the maximum current that can be delivered by the EVSE to the EV.</p>
+<p>This shall represent the actual maximum current offered to the EV at any time. Note that the EV can draw
+less current than this value. For example, the EV may be limiting its power draw based on the operating
+conditions of the battery, such as temperature and state of charge.</p>
+<p>The attribute can be initially set using the EnableCharging command or by adjusting the
+UserMaximumChargeCurrent attribute.</p>
+<p>This attribute value shall be the minimum of:</p>
+<p>• CircuitCapacity - Electrician’s installation setting</p>
+<p>• CableAssemblyCurrentLimit (detected by the EVSE when the cable is plugged in)</p>
+<p>• MaximumChargeCurrent field in the EnableCharging command</p>
+<p>• UserMaximumChargeCurrent attribute</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-3" class="tsd-anchor"></a>See<a href="#See-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.8</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.maximumChargeCurrent</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2582</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="minimumChargeCurrent" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>minimum<wbr/>Charge<wbr/>Current</span><a href="#minimumChargeCurrent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">minimum<wbr/>Charge<wbr/>Current</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>Indicates the minimum current that can be delivered by the EVSE to the EV. The attribute can be set
+using the EnableCharging command.</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-4" class="tsd-anchor"></a>See<a href="#See-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.7</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.minimumChargeCurrent</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2559</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="randomizationDelayWindow" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code> <code class="tsd-tag">Readonly</code><span>randomization<wbr/>Delay<wbr/>Window</span><a href="#randomizationDelayWindow" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">randomization<wbr/>Delay<wbr/>Window</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><p>Indicates the size of a random window over which the EVSE will randomize the start of a charging
+session. This value is in seconds.</p>
+<p>This is a feature that is mandated in some markets (such as UK) where the EVSE should by default
+randomize its start time within the randomization window. By default in the UK this should be 600s.</p>
+<p>For example, if the RandomizationDelayWindow is 600s (i.e. 10 minutes) and if there was a cheap rate
+energy starting at 00:30, then the EVSE must compute a random delay between 0-599s and add this to its
+initial planned start time.</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-5" class="tsd-anchor"></a>See<a href="#See-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.11</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.randomizationDelayWindow</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2615</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="sessionDuration" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>session<wbr/>Duration</span><a href="#sessionDuration" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">session<wbr/>Duration</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-6" class="tsd-anchor"></a>See<a href="#See-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.sessionDuration</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2623</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="sessionEnergyCharged" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>session<wbr/>Energy<wbr/>Charged</span><a href="#sessionEnergyCharged" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">session<wbr/>Energy<wbr/>Charged</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-7" class="tsd-anchor"></a>See<a href="#See-7" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.sessionEnergyCharged</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2627</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="sessionId" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>session<wbr/>Id</span><a href="#sessionId" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">session<wbr/>Id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-8" class="tsd-anchor"></a>See<a href="#See-8" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.sessionId</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2619</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="state" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>state</span><a href="#state" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">state</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_matter_types.clusters_energy_evse.EnergyEvse.html" class="tsd-signature-type tsd-kind-namespace">EnergyEvse</a><span class="tsd-signature-symbol">.</span><a href="../enums/_matter_types.clusters_energy_evse.EnergyEvse.State.html" class="tsd-signature-type tsd-kind-enum">State</a></div><div class="tsd-comment tsd-typography"><p>Indicates the current status of the EVSE. This higher-level status is partly derived from the signaling
+protocol as communicated between the EVSE and the vehicle through the pilot signal.</p>
+<p>The State attribute shall change when the EVSE detects change of condition of the EV (plugged in or
+unplugged, whether the vehicle is asking for demand or not, and if it is charging or discharging).</p>
+<p>NOTE</p>
+<p>SessionEnding is not really a state but a transition. However, the transition period</p>
+<p>may take a few seconds and is useful for some clean up purposes. The Fault state is used to indicate
+that the FaultState attribute is not NoError.</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-9" class="tsd-anchor"></a>See<a href="#See-9" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.1</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.state</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2514</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="supplyState" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Readonly</code><span>supply<wbr/>State</span><a href="#supplyState" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">supply<wbr/>State</span><span class="tsd-signature-symbol">:</span> <a href="../modules/_matter_types.clusters_energy_evse.EnergyEvse.html" class="tsd-signature-type tsd-kind-namespace">EnergyEvse</a><span class="tsd-signature-symbol">.</span><a href="../enums/_matter_types.clusters_energy_evse.EnergyEvse.SupplyState.html" class="tsd-signature-type tsd-kind-enum">SupplyState</a></div><div class="tsd-comment tsd-typography"><p>Indicates whether the EV is currently allowed to charge from or discharge to the EVSE.</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-10" class="tsd-anchor"></a>See<a href="#See-10" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.2</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.supplyState</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2520</li></ul></aside></section><section class="tsd-panel tsd-member tsd-is-inherited"><a id="userMaximumChargeCurrent" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><code class="tsd-tag">Optional</code> <code class="tsd-tag">Readonly</code><span>user<wbr/>Maximum<wbr/>Charge<wbr/>Current</span><a href="#userMaximumChargeCurrent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">user<wbr/>Maximum<wbr/>Charge<wbr/>Current</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div><div class="tsd-comment tsd-typography"><p>Indicates a maximum current that can set by the consumer (e.g. via an app) as a preference to further
+reduce the charging rate. This may be desirable if the home owner has a solar PV or battery storage
+system which may only be able to deliver a limited amount of power. The consumer can manually control
+how much they allow the EV to take.</p>
+<p>This attribute value shall be limited by the EVSE to be in the range of:</p>
+<p>MinimumChargeCurrent &lt;= UserMaximumChargeCurrent &lt;= MaximumChargeCurrent</p>
+<p>where MinimumChargeCurrent and MaximumChargeCurrent are the values received in the EnableCharging
+command.</p>
+<p>Its default value SHOULD be initialized to the same as the CircuitCapacity attribute. This value shall
+be persisted across reboots to ensure it does not cause charging issues during temporary power failures.</p>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-See"><h4 class="tsd-anchor-link"><a id="See-11" class="tsd-anchor"></a>See<a href="#See-11" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>MatterSpecification.v13.Cluster § 9.3.8.10</p>
+</div></div><aside class="tsd-sources"><p>Inherited from StateType.userMaximumChargeCurrent</p><ul><li>Defined in packages/types/dist/esm/clusters/energy-evse.d.ts:2601</li></ul></aside></section></section></details></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="tsd-otp-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Properties</summary><div><a href="#chargingEnabledUntil" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>charging<wbr/>Enabled<wbr/>Until</span></a><a href="#circuitCapacity" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>circuit<wbr/>Capacity</span></a><a href="#faultState" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>fault<wbr/>State</span></a><a href="#maximumChargeCurrent" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>maximum<wbr/>Charge<wbr/>Current</span></a><a href="#minimumChargeCurrent" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>minimum<wbr/>Charge<wbr/>Current</span></a><a href="#randomizationDelayWindow" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>randomization<wbr/>Delay<wbr/>Window</span></a><a href="#sessionDuration" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>session<wbr/>Duration</span></a><a href="#sessionEnergyCharged" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>session<wbr/>Energy<wbr/>Charged</span></a><a href="#sessionId" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>session<wbr/>Id</span></a><a href="#state" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>state</span></a><a href="#supplyState" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>supply<wbr/>State</span></a><a href="#userMaximumChargeCurrent" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>user<wbr/>Maximum<wbr/>Charge<wbr/>Current</span></a></div></details></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1"></use></svg><span>matter.js-monorepo</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base=".."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>

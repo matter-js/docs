@@ -7,8 +7,8 @@
 import * as mod from "@noble/curves/abstract/modular";
 import * as utils from "@noble/curves/abstract/utils";
 import { p256 } from "@noble/curves/p256";
-import { MatterError, NoProviderError } from "../common/MatterError.js";
-import { ByteArray, Endian } from "../util/ByteArray.js";
+import { MatterError, NoProviderError } from "../MatterError.js";
+import { Endian } from "../util/Bytes.js";
 import { DataReader } from "../util/DataReader.js";
 import { PrivateKey } from "./Key.js";
 
@@ -34,18 +34,18 @@ export abstract class Crypto {
         throw new NoProviderError("No provider configured");
     };
 
-    abstract encrypt(key: ByteArray, data: ByteArray, nonce: ByteArray, aad?: ByteArray): ByteArray;
-    static readonly encrypt = (key: ByteArray, data: ByteArray, nonce: ByteArray, aad?: ByteArray): ByteArray =>
+    abstract encrypt(key: Uint8Array, data: Uint8Array, nonce: Uint8Array, aad?: Uint8Array): Uint8Array;
+    static readonly encrypt = (key: Uint8Array, data: Uint8Array, nonce: Uint8Array, aad?: Uint8Array): Uint8Array =>
         Crypto.get().encrypt(key, data, nonce, aad);
 
-    abstract decrypt(key: ByteArray, data: ByteArray, nonce: ByteArray, aad?: ByteArray): ByteArray;
-    static readonly decrypt = (key: ByteArray, data: ByteArray, nonce: ByteArray, aad?: ByteArray): ByteArray =>
+    abstract decrypt(key: Uint8Array, data: Uint8Array, nonce: Uint8Array, aad?: Uint8Array): Uint8Array;
+    static readonly decrypt = (key: Uint8Array, data: Uint8Array, nonce: Uint8Array, aad?: Uint8Array): Uint8Array =>
         Crypto.get().decrypt(key, data, nonce, aad);
 
-    abstract getRandomData(length: number): ByteArray;
-    static readonly getRandomData = (length: number): ByteArray => Crypto.get().getRandomData(length);
+    abstract getRandomData(length: number): Uint8Array;
+    static readonly getRandomData = (length: number): Uint8Array => Crypto.get().getRandomData(length);
 
-    static readonly getRandom = (): ByteArray => Crypto.get().getRandomData(CRYPTO_RANDOM_LENGTH);
+    static readonly getRandom = (): Uint8Array => Crypto.get().getRandomData(CRYPTO_RANDOM_LENGTH);
 
     static readonly getRandomUInt16 = (): number =>
         new DataReader(Crypto.get().getRandomData(2), Endian.Little).readUInt16();
@@ -67,57 +67,62 @@ export abstract class Crypto {
         }
     };
 
-    abstract ecdhGeneratePublicKey(): { publicKey: ByteArray; ecdh: any };
-    static readonly ecdhGeneratePublicKey = (): { publicKey: ByteArray; ecdh: any } =>
+    abstract ecdhGeneratePublicKey(): { publicKey: Uint8Array; ecdh: any };
+    static readonly ecdhGeneratePublicKey = (): { publicKey: Uint8Array; ecdh: any } =>
         Crypto.get().ecdhGeneratePublicKey();
 
-    abstract ecdhGeneratePublicKeyAndSecret(peerPublicKey: ByteArray): {
-        publicKey: ByteArray;
-        sharedSecret: ByteArray;
+    abstract ecdhGeneratePublicKeyAndSecret(peerPublicKey: Uint8Array): {
+        publicKey: Uint8Array;
+        sharedSecret: Uint8Array;
     };
     static readonly ecdhGeneratePublicKeyAndSecret = (
-        peerPublicKey: ByteArray,
-    ): { publicKey: ByteArray; sharedSecret: ByteArray } => Crypto.get().ecdhGeneratePublicKeyAndSecret(peerPublicKey);
+        peerPublicKey: Uint8Array,
+    ): { publicKey: Uint8Array; sharedSecret: Uint8Array } =>
+        Crypto.get().ecdhGeneratePublicKeyAndSecret(peerPublicKey);
 
-    abstract ecdhGenerateSecret(peerPublicKey: ByteArray, ecdh: any): ByteArray;
-    static readonly ecdhGenerateSecret = (peerPublicKey: ByteArray, ecdh: any): ByteArray =>
+    abstract ecdhGenerateSecret(peerPublicKey: Uint8Array, ecdh: any): Uint8Array;
+    static readonly ecdhGenerateSecret = (peerPublicKey: Uint8Array, ecdh: any): Uint8Array =>
         Crypto.get().ecdhGenerateSecret(peerPublicKey, ecdh);
 
-    abstract hash(data: ByteArray | ByteArray[]): ByteArray;
-    static readonly hash = (data: ByteArray | ByteArray[]): ByteArray => Crypto.get().hash(data);
+    abstract hash(data: Uint8Array | Uint8Array[]): Uint8Array;
+    static readonly hash = (data: Uint8Array | Uint8Array[]): Uint8Array => Crypto.get().hash(data);
 
-    abstract pbkdf2(secret: ByteArray, salt: ByteArray, iteration: number, keyLength: number): Promise<ByteArray>;
+    abstract pbkdf2(secret: Uint8Array, salt: Uint8Array, iteration: number, keyLength: number): Promise<Uint8Array>;
     static readonly pbkdf2 = (
-        secret: ByteArray,
-        salt: ByteArray,
+        secret: Uint8Array,
+        salt: Uint8Array,
         iteration: number,
         keyLength: number,
-    ): Promise<ByteArray> => Crypto.get().pbkdf2(secret, salt, iteration, keyLength);
+    ): Promise<Uint8Array> => Crypto.get().pbkdf2(secret, salt, iteration, keyLength);
 
-    abstract hkdf(secret: ByteArray, salt: ByteArray, info: ByteArray, length?: number): Promise<ByteArray>;
-    static readonly hkdf = (secret: ByteArray, salt: ByteArray, info: ByteArray, length?: number): Promise<ByteArray> =>
-        Crypto.get().hkdf(secret, salt, info, length);
+    abstract hkdf(secret: Uint8Array, salt: Uint8Array, info: Uint8Array, length?: number): Promise<Uint8Array>;
+    static readonly hkdf = (
+        secret: Uint8Array,
+        salt: Uint8Array,
+        info: Uint8Array,
+        length?: number,
+    ): Promise<Uint8Array> => Crypto.get().hkdf(secret, salt, info, length);
 
-    abstract hmac(key: ByteArray, data: ByteArray): ByteArray;
-    static readonly hmac = (key: ByteArray, data: ByteArray): ByteArray => Crypto.get().hmac(key, data);
+    abstract hmac(key: Uint8Array, data: Uint8Array): Uint8Array;
+    static readonly hmac = (key: Uint8Array, data: Uint8Array): Uint8Array => Crypto.get().hmac(key, data);
 
-    abstract sign(privateKey: JsonWebKey, data: ByteArray | ByteArray[], dsaEncoding?: CryptoDsaEncoding): ByteArray;
+    abstract sign(privateKey: JsonWebKey, data: Uint8Array | Uint8Array[], dsaEncoding?: CryptoDsaEncoding): Uint8Array;
     static readonly sign = (
         privateKey: JsonWebKey,
-        data: ByteArray | ByteArray[],
+        data: Uint8Array | Uint8Array[],
         dsaEncoding?: CryptoDsaEncoding,
-    ): ByteArray => Crypto.get().sign(privateKey, data, dsaEncoding);
+    ): Uint8Array => Crypto.get().sign(privateKey, data, dsaEncoding);
 
     abstract verify(
         publicKey: JsonWebKey,
-        data: ByteArray,
-        signature: ByteArray,
+        data: Uint8Array,
+        signature: Uint8Array,
         dsaEncoding?: CryptoDsaEncoding,
     ): void;
     static readonly verify = (
         publicKey: JsonWebKey,
-        data: ByteArray,
-        signature: ByteArray,
+        data: Uint8Array,
+        signature: Uint8Array,
         dsaEncoding?: CryptoDsaEncoding,
     ): void => Crypto.get().verify(publicKey, data, signature, dsaEncoding);
 
